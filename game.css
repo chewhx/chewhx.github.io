@@ -1,0 +1,114 @@
+.question{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 4.0rem;
+  text-align: center;
+}
+
+.choice-container {
+  display: inline-flex;
+  margin: 0.5rem;
+  width: 100%;
+  border: 0rem solid rgba(86, 165, 235, 0.25);
+  background-color:rgb(229, 232, 239);
+  border-radius: 15px;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(83, 91, 248, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 2.0rem;
+  padding-right: 2.5rem;
+  color: #252525;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 2.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.choice-text {
+  padding: 2.0rem;
+  width: 100%;
+  font-size: 2.0rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.correct {
+  background-color:#78DDA4;
+}
+
+.incorrect {
+  background-color: #DD7890;
+}
+
+/* HUD */
+
+.hud-prefix{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  position: relative;
+}
+
+#progressBar {
+  display: flex;
+  width: 100%;
+  height: 1rem;
+  border: 0.3rem solid rgb(83, 91, 248);
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+#progressBarFull {
+  display: flex;
+  width: auto;
+  height: 0.4rem;
+  background-color: rgb(83, 91, 248);
+  width: 0%;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 1.0rem;
+  width: 100%;
+  justify-content:space-between;
+}
+
+.page-next{
+  padding: 1.5rem 3.0rem 1.5rem 3.0rem;
+  margin-bottom: 0.5rem;
+  margin-top: 3.0rem;
+  font-size: 1.5rem;
+  background-color:rgb(83, 91, 248);
+  border-radius: 15px;
+  color:whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page-next:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(83, 91, 248, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.explanation {
+  display: flex;
+  margin-top: 2.0rem;
+  width: 100%;
+}
+
+.explain-text{
+  display: none;
+	font-size: 1.5rem;
+  width: 100%;
+  font-weight: 550;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 1.0rem;
+}
+
