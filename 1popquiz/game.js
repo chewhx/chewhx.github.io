@@ -14,7 +14,7 @@ let index = -1;
 let questions = [];
 
 
-fetch('questions.json')
+fetch('/1popquiz/questions.json')
     .then((res) => {
         return res.json();
     })
