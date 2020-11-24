@@ -1,3 +1,7 @@
+.scarecrow {
+   width: 540px;
+}
+
 .title {
   font-family: Inconsolata;
   font-size: 24px;
@@ -50,7 +54,6 @@
 }
 
 .footer {
-  position: fixed;
   bottom: 0;
   font-family: Montserrat;
   font-size: 14px;
@@ -63,8 +66,14 @@
   width: 100%;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 @media (max-width: 994px) {
-  .footer {
+  /* .footer {
     position: relative;
     font-family: Montserrat;
     font-size: 14px;
@@ -75,5 +84,18 @@
     text-align: center;
     padding-bottom: 39px;
     width: 100%;
+  } */
+
+  .scarecrow {
+     width: 300px;
+  }
+
+  .message-1 {
+    font-size: 36px;
+    line-height: 65px;
+  }
+
+  .message-2 {
+    font-size: 17px;
   }
 }
