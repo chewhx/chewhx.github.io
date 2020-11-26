@@ -4,7 +4,7 @@ As I'm learning to use Sketch for prototyping web UI. I wanted a solution find k
 
 # Screenshots
 
-![Screenshot](https://chewhx.github.io/one-projects/one-table/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/chewhx/chewhx.github.io/main/one-projects/one-table/screenshot.png)
 
 # Features
 
