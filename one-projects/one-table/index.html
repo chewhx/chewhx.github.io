@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <div class="text-center mt-5 pl-5 pr-5">
+
+      <object type="image/svg+xml" data="sketch-symbol.svg" width="10%">
+      </object>
+
+      <h1 class="display-6">A searchable list of shortcut keys for Sketch app</h1><br />
+      <p>Created by <a href="https://github.com/chewhx">@chewhx</a><br />See <a href="">documentation</a> for credits</p>
+
+    </div>
+  </section>
+
+
+  <section id="searchbar">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-8 mb-5 mt-5">
+          <form>
+            <input type="search" id="search-input" class="form-control" placeholder="Search for..."><br>
+            <span id="insert-btn" class="badge badge-primary">Insert</span>
+            <span id="type-btn" class="badge badge-primary">Typography</span>
+            <span id="canvas-btn" class="badge badge-primary">Canvas</span>
+            <span id="windows-btn" class="badge badge-primary">Window</span>
+            <span id="shapes-btn" class="badge badge-primary">Shapes</span>
+            <span id="layers-btn" class="badge badge-primary">Layers</span>
+            <span id="groups-btn" class="badge badge-primary">Groups</span>
+            <span id="artboards-btn" class="badge badge-primary">Artboards</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="data">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <table class="table table-hover">
+            <tr>
+              <th data-colname="desc" data-order="desc">DESCRIPTION</th>
+              <th data-colname="short" data-order="desc">SHORTCUTS</th>
+            </tr>
+            <tbody id="myTable">
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+[
+ {
+   "DESCRIPTION": "New Artboard",
+   "SHORTCUT": "<kbd>A</kbd>",
+   "TAGS": "Insert"
+ },
+ {
+   "DESCRIPTION": "Slice",
+   "SHORTCUT": "<kbd>S</kbd>",
+   "TAGS": "Insert"
+ },
+ {
+   "DESCRIPTION": "Rectangle",
+   "SHORTCUT": "<kbd>R</kbd>",
+   "TAGS": "Insert, Shapes"
+ },
+ {
+   "DESCRIPTION": "Rounded Rectangle",
+   "SHORTCUT": "<kbd>U</kbd>",
+   "TAGS": "Insert, Shapes"
+ },
+ {
+   "DESCRIPTION": "Oval / Circle",
+   "SHORTCUT": "<kbd>O</kbd>",
+   "TAGS": "Insert, Shapes"
+ },
+ {
+   "DESCRIPTION": "Line",
+   "SHORTCUT": "<kbd>L</kbd>",
+   "TAGS": "Insert, Shapes"
+ },
+ {
+   "DESCRIPTION": "Vector Point",
+   "SHORTCUT": "<kbd>V</kbd>",
+   "TAGS": "Insert, Shapes"
+ },
+ {
+   "DESCRIPTION": "Pencil",
+   "SHORTCUT": "<kbd>P</kbd>",
+   "TAGS": "Insert, Shapes"
+ },
+ {
+   "DESCRIPTION": "Text",
+   "SHORTCUT": "<kbd>T</kbd>",
+   "TAGS": "Insert, Typography"
+ },
+ {
+   "DESCRIPTION": "Bold",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>B</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Italic",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>I</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Underline",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>U</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Increase Font Size",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>+</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Decrease Font Size",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>–</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Increase Character Spacing",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Decrease Character Spacing",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>T</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Change Font",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>T</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Convert Text to Outlines",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>O</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Align Left",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>{</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Align Center",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>|</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Align Right",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>}</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Special Characters",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>Cmd</kbd> + <kbd>Space</kbd>",
+   "TAGS": "Typography"
+ },
+ {
+   "DESCRIPTION": "Zoom In",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>+</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Zoom Out",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>-</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Actual Size",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>0</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Center Canvas",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>1</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Zoom Selection",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>2</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Center Selection",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>3</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Temporary Zoom to Actual Size",
+   "SHORTCUT": "<kbd>§</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Focus on First Input Field",
+   "SHORTCUT": "<kbd>Alt </kbd> + <kbd>Tab</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle Rulers",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>R</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle Grid",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>G</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle Layer Guides",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>L</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle Pixels",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>P</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle Selection Handles",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>H</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle Pixel Grid",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>X</kbd>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Move Canvas",
+   "SHORTCUT": "<kbd>Space</kbd> + <strong>  DRAG</strong>",
+   "TAGS": "Canvas"
+ },
+ {
+   "DESCRIPTION": "Toggle between Documents",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>~</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Toggle Layers List",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>1</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Toggle Inspector",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>2</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Toggle Layers, Inspector",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>3</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Toggle Toolbar",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>T</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Presentation Mode",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>.</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Enter Fullscreen",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>Cmd</kbd> + <kbd>F</kbd>",
+   "TAGS": "Window"
+ },
+ {
+   "DESCRIPTION": "Keep Current Selection",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>Alt</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Use as Mask (Works for Layers & Groups)",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>Cmd</kbd> + <kbd>M</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Union",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>U</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Substract",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>S</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Intersect",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>I</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Difference",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>X</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Change Object Size",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> <kbd>←</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Change Units by 10",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> <kbd>←</kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Change Vector Point Style",
+   "SHORTCUT": "<kbd>1</kbd> , <kbd>2</kbd> , <kbd>3</kbd> , <kbd>4<kbd>",
+   "TAGS": "Shapes"
+ },
+ {
+   "DESCRIPTION": "Show Distance to other Layers",
+   "SHORTCUT": "<kbd>Alt</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Show Distance to other Layers inside Group",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Duplicate (Repeat with ⌘D)",
+   "SHORTCUT": "<kbd>Alt</kbd> + <strong>  DRAG</strong>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Copy Style",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>C</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Paste Style",
+   "SHORTCUT": "<kbd>Alt</kbd> + <kbd>Cmd</kbd> + <kbd>V</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Color Picker",
+   "SHORTCUT": "<kbd>Ctrl</kbd> + <kbd>C</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Transform",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>T</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Rotate",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>R</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Toggle Fill",
+   "SHORTCUT": "<kbd>F</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Toggle Border",
+   "SHORTCUT": "<kbd>B</kbd>",
+   "TAGS": "Layers"
+ },
+ {
+   "DESCRIPTION": "Bring Forward",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>]</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Bring to Front",
+   "SHORTCUT": "<kbd>Opt</kbd> + <kbd>Cmd</kbd> + <kbd>]</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Send Backward",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>[</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Sent to Back",
+   "SHORTCUT": "<kbd>Opt</kbd> + <kbd>Cmd</kbd> + <kbd>[</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Hide",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>H</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Lock",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>L</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Rename",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>R</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Group Layers",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>G</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Ungroup Layers",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>G</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Select Above Layer",
+   "SHORTCUT": "<kbd>Shift</kbd> + <kbd>Tab</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Select Layer Below",
+   "SHORTCUT": "<kbd>Tab</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Select Parent Artboard",
+   "SHORTCUT": "<kbd>Esc</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Find Layer by Name",
+   "SHORTCUT": "<kbd>Cmd</kbd> + <kbd>F</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Select Above Page",
+   "SHORTCUT": "<kbd>Fn</kbd> + <kbd>↑</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ },
+ {
+   "DESCRIPTION": "Select Page Below",
+   "SHORTCUT": "<kbd>Fn</kbd> + <kbd>↓</kbd>",
+   "TAGS": "Layers, Groups, Artboards"
+ }
+]
