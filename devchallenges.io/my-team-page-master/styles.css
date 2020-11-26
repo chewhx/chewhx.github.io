@@ -1,0 +1,78 @@
+.page-title {
+  font-family: "PT Serif";
+  font-size: 2.25em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(48*0.0625)em;
+  letter-spacing: -0.045em;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.page-subtitle .pagecaption {
+  font-family: "Poppins";
+  font-size: calc(18*0.0625)em;
+  font-style: normal;
+  line-height: calc(27*0.0625)em;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.page-subtitle {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.page-caption {
+  font-weight: 400;
+  width: 75%;
+}
+
+
+.tile {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.label-title {
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  width: fit-content;
+  font-family: PT Serif;
+  font-size: calc(12*0.0625)empx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(16*0.0625)empx;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.label-name {
+  font-family: "Poppins";
+  font-size: calc(14*0.0625)em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: calc(21*0.0625)em;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.profile-pic {
+  display: inline-flex;
+  width: 15em;
+}
+
+.footer {
+  bottom: 0;
+  font-family: Montserrat;
+  font-size: calc(14*0.0625)em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: calc(17*0.0625)em;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 39px;
+  padding-top: 39px;
+  width: 100%;
+}
