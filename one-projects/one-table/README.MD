@@ -1,34 +1,18 @@
-# Project title
-
-ONE:SKETCHSHORTCUTS
-
 # Motivation
 
-# Build status
-
-# Code style
+As I'm learning to use Sketch for prototyping web UI. I wanted a solution find keyboard shortcuts on-the-go without having to initial CMD+F.
 
 # Screenshots
 
-# Tech/framework used
+![Screenshot](https://chewhx.github.io/one-projects/one-table/screenshot.png)
 
 # Features
 
 - A searchable table of shortcut keys
 
-# Code Example
-
-# Installation
-
-# API Reference
-
-# Tests
-
 # How to use?
 
-Go here. Search or browse through to find what you need.
-
-# Contribute
+Visit site [here](https://chewhx.github.io/one-projects/one-table/index.html). Search or browse through to find what you need.
 
 # Credits
 
@@ -42,4 +26,9 @@ Go here. Search or browse through to find what you need.
 
 # Future developments
 
+Might add:
+- subheadings in the table
+- toggle to hide or show shortcut keys under subheadings
+
 # License
+MIT License
