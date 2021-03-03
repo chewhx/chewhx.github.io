@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+    />
+
+    <title>{{page.title}} | chewhx.com</title>
+  </head>
+
+  <header>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="/"> chewhx.com </a></li>
+          <li class="breadcrumb-item active"><a href="/blog"> Blog </a></li>
+        </ol>
+      </nav>
+
+      <div class="namecard mb-3">
+        <img
+          class="namecard_avatar"
+          src="/assets/images/avatar.png"
+          alt="chewhx-avatar"
+        />
+        <span class="namecard_name">Chew Han Xiang</span>
+
+        <span class="namecard_tagline">
+          while(alive) {write code, drink coffee, lift weights, read books,
+          manage projects}
+          <span id="social-links" class="d-flex justify-content-start my-2">
+            {% for each in site.data.social %}
+            <a href="{{ each.link }}" target="_blank">
+              <img
+                src="{{ '/assets/icons/' | append: each.filename }}"
+                alt="{{ each.filename }}"
+              />
+            </a>
+            {% endfor %}
+          </span>
+        </span>
+      </div>
+    </div>
+  </header>
+  <body></body>
+</html>

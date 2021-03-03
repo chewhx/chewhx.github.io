@@ -1,0 +1,130 @@
+{% include header.html%}
+
+<div class="container">
+    {{ content }}
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button
+            class="btn btn-link btn-block text-left"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <span class="d-flex justify-content-between">
+              <h4>Experience</h4>
+              <span>🔽</span>
+            </span>
+          </button>
+        </h2>
+      </div>
+
+      <div
+        id="collapseOne"
+        class="collapse"
+        aria-labelledby="headingOne"
+        data-parent="#headingOne"
+      >
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            {% for each in site.data.experience.content %}
+            <li class="list-group-item">
+              <h5>{{ each.job}}</h5>
+              <p class="text-muted">{{ each.period}}</p>
+              <p><strong>{{ each.company}}</strong></p>
+              <p>{{ each.description}}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button
+            class="btn btn-link btn-block text-left collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <span class="d-flex justify-content-between">
+              <h4>Technolgies & Skills</h4>
+              <span>🔽</span>
+            </span>
+          </button>
+        </h2>
+      </div>
+      <div
+        id="collapseTwo"
+        class="collapse"
+        aria-labelledby="headingTwo"
+        data-parent="#headingTwo"
+      >
+        <div class="card-body">   
+          <div class="row d-flex justify-content-around align-items-center mb-4">
+              <i class="devicon-html5-plain-wordmark colored" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="row d-flex justify-content-around align-items-center">
+              <i class="devicon-express-original colored text-success"></i>
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+              <i class="devicon-react-original-wordmark colored"></i>
+              <i class="devicon-redux-original colored"></i>
+              <span class="text-muted">
+                <i class="devicon-google-plain colored"></i>
+                Suite
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <span class="d-flex justify-content-between">
+                <h4>Education</h4>
+                <span>🔽</span>
+              </span>
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#headingThree"
+        >
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              {% for each in site.data.education.content %}
+              <li class="list-group-item">
+                <h5>{{ each.program}}</h5>
+                <p class="text-muted">{{ each.school}}</p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</div>
