@@ -1,43 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>{{ page.title }} | chewhx.com</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav aria-label="breadcrumb" style="position: sticky; position: -webkit-sticky; top:0;">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active"><a href="/"> chewhx.com </a></li>
-          <li class="breadcrumb-item active"><a href="/blog"> Blog </a></li>
-          <li class="breadcrumb-item active">{{ page.title }}</li>
-        </ol>
-      </nav>
-      
-      
+  {% include header.html%}
+  <body class="bg-light">
+    {% include navbar.html%}
+
+    <!-- CONTAINER START -->
+    <main class="container">
+      <div class="mb-4">
+        <h3>{{ page.date | date_to_string }}</h3>
+        <p class="display-4">
+          <a href="{{ post.url }}">{{ page.title }}</a>
+        </p>
+      </div>
       <article>
-        <h1>{{ page.title}}</h1>
-        {% for tag in page.tags %}
-    <span class="badge badge-pill badge-info mb-5"><small>{{tag}}</small></span>
-    {% endfor %}
         {{ content }}
       </article>
-      
-      {% include footer.html%}
-      
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
+      <!-- TAGS SECTION, FOR FURTHER DEPLOY -->
+      <!-- <div class="h4 my-5">
+        Tags:
+        {% for tag in page.tags %}
+        <span>{{ tag }},</span>
+          {% endfor %}
+        </div> -->
+      <!-- CONTAINER END -->
+    </main>
+
+    {% include footer.html %}
   </body>
 </html>

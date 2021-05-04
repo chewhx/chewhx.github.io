@@ -1,190 +1,111 @@
-{% include header.html%}
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html%}
+  <body class="bg-light">
+    {% include navbar.html%}
 
-<div class="container">
-    {{ content }}
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button
-            class="btn btn-link btn-block text-left"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            <span class="d-flex justify-content-between">
-              <h4>Experience</h4>
-              <span>🔽</span>
-            </span>
-          </button>
-        </h2>
-      </div>
+    <!-- CONTAINER START -->
+    <main class="container">
+      <!-- SUMMARY SECTION -->
+      <section id="summary" class="mb-5">{{ content }}</section>
 
-      <div
-        id="collapseOne"
-        class="collapse"
-        aria-labelledby="headingOne"
-        data-parent="#headingOne"
-      >
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            {% for each in site.data.experience.content %}
-            <li class="list-group-item">
-              <h5>{{ each.job}}</h5>
-              <p class="text-muted">{{ each.period}}</p>
-              <p><strong>{{ each.company}}</strong></p>
-              <p>{{ each.description}}</p>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-
-
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button
-            class="btn btn-link btn-block text-left"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseTwo"
-            aria-expanded="true"
-            aria-controls="collapseTwo"
-          >
-            <span class="d-flex justify-content-between">
-              <h4>Personal Projects</h4>
-              <span>🔽</span>
-            </span>
-          </button>
-        </h2>
-      </div>
-
-      <div
-        id="collapseTwo"
-        class="collapse"
-        aria-labelledby="headingTwo"
-        data-parent="#headingTwo"
-      >
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              
-              <h4>
-                Guess The Flag -
-                <a href="https://guess-the-country-flags.herokuapp.com">
-                  Link
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="my-5">
+        <div class="row">
+          <div class="col-lg-4 h5 mb-4 section-subtitle">
+            <div class="border"></div>
+            💻 Personal Projects
+          </div>
+          <div class="col-lg-8">
+            <ul class="h3 list-unstyled">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://guess-the-country-flags.herokuapp.com/"
+                >
+                  <u> Guess The Flag → </u>
                 </a>
-              </h4>
-              <p> MCQ pop quiz app, built with ReactJs and React-Bootstrap</p>
-              <p> Use guess which country the flag belongs to, by selecting the options presented</p>
-              <p> Responsive mobile and desktop UI</p>
-            </li>
-            <li class="list-group-item">
-
-              <h4>
-                Mernshop - <a href="https://project-mernshop.herokuapp.com">
-                  Link
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://project-mernshop.herokuapp.com/"
+                >
+                  <u> Mernshop → </u>
                 </a>
-              </h4>
-              
-              <p> Mock ecommerce web store built with ReactJs and React Context API</p>
-              <p> Features available: add or remove product listing, adding items to cart and fill in form to check out summary</p>
-              
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <!--  -->
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button
-            class="btn btn-link btn-block text-left collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            <span class="d-flex justify-content-between">
-              <h4>Technolgies & Skills</h4>
-              <span>🔽</span>
-            </span>
-          </button>
-        </h2>
-      </div>
-      <div
-        id="collapseThree"
-        class="collapse"
-        aria-labelledby="headingThree"
-        data-parent="#headingThree"
-      >
-        <div class="card-body">   
-          <div class="row d-flex justify-content-around align-items-center mb-4">
-              <i class="devicon-html5-plain-wordmark colored" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-sass-original colored"></i>
-              <i class="devicon-nodejs-plain colored"></i>
-            </div>
-            <div class="row d-flex justify-content-around align-items-center">
-              <i class="devicon-express-original colored text-success"></i>
-              <i class="devicon-mongodb-plain-wordmark colored"></i>
-              <i class="devicon-react-original-wordmark colored"></i>
-              <i class="devicon-redux-original colored"></i>
-              <span class="text-muted">
-                <i class="devicon-google-plain colored"></i>
-                Suite
-              </span>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="my-5">
+        <div class="row my-5">
+          <div class="col-lg-4 h5 mb-4 section-subtitle">
+            <div class="border"></div>
+            🛠️ Skills & Expertises
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col">
+                <ul class="h3 list-unstyled">
+                  {% for each in site.data.techskill.content1 %}
+                  <li>{{ each }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="h3 list-unstyled">
+                  {% for each in site.data.techskill.content2 %}
+                  <li>{{ each }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingFour">
-          <h2 class="mb-0">
-            <button
-              class="btn btn-link btn-block text-left collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              <span class="d-flex justify-content-between">
-                <h4>Education</h4>
-                <span>🔽</span>
-              </span>
-            </button>
-          </h2>
-        </div>
-        <div
-          id="collapseFour"
-          class="collapse"
-          aria-labelledby="headingFour"
-          data-parent="#headingFour"
-        >
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              {% for each in site.data.education.content %}
-              <li class="list-group-item">
-                <h5>{{ each.program}}</h5>
-                <p class="text-muted">{{ each.school}}</p>
-              </li>
+      </section>
+
+      <!-- EXPERIENCES SECTION -->
+      <section id="experiences">
+        <div class="row my-5">
+          <div class="col-lg-4 h5 mb-4 section-subtitle">
+            <div class="border"></div>
+            🌱 Experiences
+          </div>
+          <div class="col-lg-8">
+            <ul class="list-unstyled">
+              {% for each in site.data.experience.content %}
+              <li class="h3">{{ each.job }}</li>
+              <li class="h5 mb-4 pb-4">{{ each.description }}</li>
               {% endfor %}
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  {% include footer.html %}
-</div>
+      <!-- EXPERIENCES SECTION -->
+      <section id="education">
+        <div class="row my-5">
+          <div class="col-lg-4 h5 mb-4 section-subtitle">
+            <div class="border"></div>
+            🎓 Education
+          </div>
+          <div class="col-lg-8">
+            <ul class="list-unstyled">
+              {% for each in site.data.education.content %}
+              <li class="h4">{{ each.program }}</li>
+              <li class="h5 font-italic mb-4 pb-5">{{ each.school }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTAINER END -->
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
