@@ -23,6 +23,11 @@ main {
   font-size: 1.25rem;
 }
 
+article {
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
 article > p > img {
   /* width: 100%;
   border: 1px solid var(--secondary);
@@ -37,10 +42,15 @@ article > p > img {
   /* full width image - credits: https://gomakethings.com/how-to-break-an-image-out-of-its-parent-container-with-css/ */
 }
 
+pre {
+  background-color: var(--white);
+  padding: 5%;
+}
+
 .navbar-toggler {
   border: 0px;
 }
 
 #footer {
-  padding: 150px 0px 200px;
+  padding: 100px 0px 75px;
 }

@@ -5,22 +5,22 @@
 
     <!-- CONTAINER START -->
     <main class="container">
+      <div class="mb-4">
+        <h3>{{ page.date | date_to_string }}</h3>
+        <p class="display-4">
+          <a href="{{ post.url }}">{{ page.title }}</a>
+        </p>
+      </div>
       <article>
-        <!-- TITLE SECTION -->
-        <div class="mb-4">
-          <h3>{{ page.date | date_to_string }}</h3>
-          <p class="display-4">
-            <a href="{{ post.url }}">{{ page.title }}</a>
-          </p>
-          {% for tag in page.tags %}
-          <span class="badge badge-pill badge-info"
-            ><small>{{tag}}</small></span
-          >
-          {% endfor %}
-        </div>
         {{ content }}
       </article>
-
+      <!-- TAGS SECTION, FOR FURTHER DEPLOY -->
+      <!-- <div class="h4 my-5">
+        Tags:
+        {% for tag in page.tags %}
+        <span>{{ tag }},</span>
+          {% endfor %}
+        </div> -->
       <!-- CONTAINER END -->
     </main>
 
