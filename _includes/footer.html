@@ -12,3 +12,37 @@
     <p class="mt-5">Made by @chewhx, using Bootstrap and Jekyll</p>
   </div>
 </footer>
+
+<script>
+  var lastScrollTop = 0;
+  // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+  document.addEventListener(
+    "scroll",
+    function () {
+      var brandname = document.querySelector("#nav-brand-chewhx");
+      var brandlogo = document.querySelector("#nav-brand-logo");
+      var tabbar = document.querySelector("#tabbar");
+
+      // or window.addEventListener("scroll"....
+      var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+
+      if (st > lastScrollTop) {
+        // downscroll code
+        brandname.classList.remove("h1");
+        brandname.classList.add("h4");
+        brandlogo.style.width = "50px";
+        tabbar.style.bottom = "-100px";
+      }
+      if (st < lastScrollTop) {
+        // upscroll code
+        brandname.classList.remove("h4");
+        brandname.classList.add("h1");
+        brandlogo.style.width = "100px";
+        tabbar.style.bottom = "0";
+      }
+      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    },
+    false
+  );
+
+</script>

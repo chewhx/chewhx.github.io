@@ -7,4 +7,4 @@ title: Chew Han Xiang
 permalink: /
 ---
 
-# 👋 Self-taught programmer open to opportunities for entry level positions in software engineering and development. Main interests in full-stack development, responsive design, finance and lifestyle apps. Currently working as finance and project manager for the arts industry.
+👋 Self-taught programmer open to opportunities for entry level positions in software engineering and development. Main interests in full-stack development, responsive design, finance and lifestyle apps. Currently working as finance and project manager for the arts industry.

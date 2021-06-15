@@ -1,0 +1,60 @@
+<div
+  id="tabbar"
+  class="
+    fixed-bottom
+    bg-white
+    list-unstyled
+    d-flex
+    justify-content-around
+    shadow-lg
+    d-sm-flex d-md-none
+  "
+  style="
+    width: 100vw;
+    z-index: 1;
+    padding: 1rem 0;
+    border-radius: 15px;
+    opacity: 96%;
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
+    transition: 0.5s;
+  "
+>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog">
+      {% if page.title == "Blog" %}
+      <u>Blog</u>
+      {% else %} Blog {% endif %}
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:chewhx@icloud.com"
+      ><i class="bi bi-mailbox2 h4"></i
+    ></a>
+  </li>
+  <div class="nav-item">
+    <a class="nav-link" target="_blank" href="https://github.com/chewhx"
+      ><i class="bi bi-github h4"></i
+    ></a>
+  </div>
+  <div class="nav-item">
+    <a
+      class="nav-link"
+      target="_blank"
+      href="https://www.linkedin.com/in/chewhx/"
+      ><i class="bi bi-linkedin h4"></i
+    ></a>
+  </div>
+  <div class="nav-item">
+    <a
+      class="nav-link"
+      target="_blank"
+      href="https://www.facebook.com/chew.h.xiang"
+      ><i class="bi bi-facebook h4"></i
+    ></a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" target="_blank" href="https://www.instagram.com/chewhx/"
+      ><i class="bi bi-instagram h4"></i
+    ></a>
+  </div>
+</div>

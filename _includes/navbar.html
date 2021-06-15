@@ -1,22 +1,28 @@
 <nav
   id="navbar"
-  class="navbar navbar-expand-lg navbar-light bg-light py-4 mb-4 sticky-top"
+  class="navbar navbar-expand-md navbar-light bg-light mb-4 sticky-top"
 >
   <div class="container">
     <a href="/">
       <img
+        id="nav-brand-logo"
         src="/assets/images/avatar.png"
         style="width: 100px"
-        class="rounded float-left"
+        class="rounded float-left d-none d-md-block"
         alt="animoji-logo-chew"
       />
     </a>
     <a class="navbar-brand mr-auto" href="/">
-      <span class="h1 font-weight-bold">Chew Han Xiang </span>
+      <span
+        id="nav-brand-chewhx"
+        class="h1 font-weight-bold"
+        style="transition: 0.5s"
+        >Chew Han Xiang
+      </span>
     </a>
-    <br />
+
     <button
-      class="navbar-toggler"
+      class="navbar-toggler d-none"
       type="button"
       data-toggle="collapse"
       data-target="#navbarSupportedContent"

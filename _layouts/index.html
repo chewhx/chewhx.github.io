@@ -7,7 +7,13 @@
     <!-- CONTAINER START -->
     <main class="container">
       <!-- SUMMARY SECTION -->
-      <section id="summary" class="mb-5">{{ content }}</section>
+      <section
+        id="summary"
+        class="mb-5"
+        style="font-size: min(max(1.25rem, 3vw), 2rem)"
+      >
+        {{ content }}
+      </section>
 
       <!-- PROJECTS SECTION -->
       <section id="projects" class="my-5">
@@ -31,11 +37,14 @@
                 <h3 class="mt-0">
                   <a
                     target="_blank"
-                    href="https://github.com/chewhx/google-text-speech"
+                    href="https://project-one-listen.herokuapp.com"
                   >
-                    <u> Google/Mercury URL Text to Audio → </u>
+                    <u> Project-One-Listen Convert Articles to Audio → </u>
                   </a>
                 </h3>
+                <small>
+                  (Hosted on free tier at Heroku, takes some time to start up)
+                </small>
                 <p>
                   Node JS application which parses text from online articles and
                   convert to audio.
@@ -88,6 +97,9 @@
                     <u> Guess The Flag → </u>
                   </a>
                 </h3>
+                <small>
+                  (Hosted on free tier at Heroku, takes some time to start up)
+                </small>
                 <p>
                   Pop quiz. Guess which countries the flags belong to. What's
                   your highest score?
@@ -189,6 +201,6 @@
       <!-- CONTAINER END -->
     </main>
 
-    {% include footer.html %}
+    {% include bottomnav.html %} {% include footer.html %}
   </body>
 </html>
