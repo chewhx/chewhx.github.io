@@ -1,0 +1,30 @@
+<section id="education" class="my-5">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-lg-3 mb-4">
+        <div class="border"></div>
+        <h5>🎓 Education</h5>
+      </div>
+
+      <div class="col-lg-9 py-5">
+        <div class="row">
+          <ul class="list-unstyled">
+            {% for edu in education %} {% if edu.link %}
+            <a href="{{ edu.link }}">
+              <li class="h4">{{ edu.program }}</li>
+            </a>
+            {% else %}
+            <li class="h4">{{ edu.program }}</li>
+            {% endif %}
+            <li class="mb-1 pb-5">
+              <em>
+                {{ edu.school }}
+              </em>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

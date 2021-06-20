@@ -1,0 +1,23 @@
+---
+layout: base-layout.njk
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: posts
+---
+
+<div class="container px-5">
+  {% for post in posts %}
+  <div class="my-5">
+    <time datetime="{{ post.date | dateIso }}">{{
+      post.date | dateReadable
+    }}</time>
+    <h1>
+      <a href="{{ post.data.external_url or post.url | url }}">{{
+        post.data.title
+      }}</a>
+    </h1>
+  </div>
+  {% endfor %}
+</div>

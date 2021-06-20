@@ -1,13 +1,20 @@
-{
-  "heading": "Education",
-  "content": [
-    {
-      "school": "Singapore Management University",
-      "program": "Bachelor of Accountancy"
-    },
-    {
-      "school": "Temasek Polytechnic",
-      "program": "Diploma in Accounting & Finance"
-    }
-  ]
-}
+[
+  {
+    "school": "Udemy",
+    "program": "The Complete 2020 Web Development Bootcamp",
+    "link": "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+  },
+  {
+    "school": "Udemy",
+    "program": "JavaScript Algorithms and Data Structures Masterclass",
+    "link": "https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/"
+  },
+  {
+    "school": "Singapore Management University",
+    "program": "Bachelor of Accountancy"
+  },
+  {
+    "school": "Temasek Polytechnic",
+    "program": "Diploma in Accounting & Finance"
+  }
+]
