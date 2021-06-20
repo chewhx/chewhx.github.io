@@ -1,0 +1,28 @@
+<section id="skills" class="my-5">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-lg-3 mb-4">
+        <div class="border"></div>
+        <h5>🛠️ Skills & Expertises</h5>
+      </div>
+
+      <div class="col-lg-9 py-5">
+        <div class="row">
+          {% for skillset in skills %}
+
+          <div class="col">
+            <ul class="list-unstyled">
+              {% for skill in skillset %}
+              <li style="font-size: clamp(1.1rem, 2vw, 1.75rem)">
+                {{ skill }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
