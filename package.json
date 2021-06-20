@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/chewhx/chewhx.github.io.git"
   },
-  "keywords": [],
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
