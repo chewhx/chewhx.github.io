@@ -31,12 +31,12 @@
   },
   {
     "title": "Blobshop",
-    "tags": ["Ecom", "ReactJS", "NodeJS"],
+    "tags": ["NextJS", "NodeJS"],
     "logo": "/assets/icons/blob.svg",
     "roundedLogo": true,
-    "url": "https://blobshop.netlify.app/",
+    "url": "https://project-blobshop.vercel.app/",
     "repo": "https://github.com/chewhx/project-blobshop",
-    "description": "Mock ecommerce store, retailing digital blobs. Try creating your own blobs and add to cart.",
+    "description": "Create digital blobs, post them to public gallery, or save locally.",
     "small": ""
   }
 ]
