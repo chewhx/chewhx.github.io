@@ -1,0 +1,25 @@
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #9d9d9d;
+$color-primary: #3db2ff;
+$color-secondary: #ff2442;
+$color-accent: #ffedda;
+$color-accent2: #ffb830;
+
+$bk-tablet-land: 1024px;
+$bk-tablet-port: 768px;
+$bk-phone: 576px;
+
+$flexJustifications: (
+  "start",
+  "center",
+  "space-between",
+  "space-around",
+  "space-evenly",
+  "right",
+  "left",
+  "flex-start",
+  "flex-end"
+);
+
+$alignments: ("left", "center", "right");

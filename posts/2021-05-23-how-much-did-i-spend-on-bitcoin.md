@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post
 date: 2021-05-23
 title: "How much did I spend on Bitcoin? →"
 categories: node gemini cryptocurrency bitcoin api

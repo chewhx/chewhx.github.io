@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post
 title: "Speed listening is my second reading habit"
 date: 2020-09-10
 categories: speedlistening learning

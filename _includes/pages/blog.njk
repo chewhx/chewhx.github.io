@@ -1,0 +1,10 @@
+<div class="post__wrapper">
+{%- for each in collections.post -%}
+  <div class="post">
+  <a href="{{ each.data.external_url or each.url | url  }}">
+    <h3 class="post__title">{{ each.data.title }}</h3>
+  </a>
+    <div class="post__datetime">{{ each.data.date | dateReadable }}</div>
+  </div> 
+{%- endfor -%}
+</div>

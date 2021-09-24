@@ -1,0 +1,217 @@
+@import "./scss/variables";
+@import "./scss/utilities";
+@import "./scss/mixins";
+@import "./scss/dev";
+@import "./scss/base";
+@import "./scss/typography";
+@import "./scss/layout";
+
+// sections
+@import "./scss/sections/nav";
+@import "./scss/sections/brand";
+@import "./scss/sections/summary";
+@import "./scss/sections/card";
+@import "./scss/sections/skills";
+
+// Dev
+@include putBorders();
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+.section__title {
+  // font-size: 4rem;
+  // letter-spacing: -0.1rem;
+  margin: 6.5rem 0 3.5rem;
+}
+
+.colored {
+  font-size: 7rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: 100% / (12 / $i);
+    }
+  }
+}
+
+.projectcard {
+  @extend .card;
+  width: 100%;
+  min-width: 325px;
+  height: 325px;
+
+  &:hover {
+    transform: none;
+  }
+
+  &:hover .projectcard__img {
+    transform: scale(1.5);
+    opacity: 30%;
+  }
+
+  &:hover .projectcard__wrapper {
+    transform: translateY(0px);
+    visibility: visible;
+  }
+
+  &:hover .projectcard__divider {
+    // border-bottom: 15px solid $color-secondary;
+    border-top: 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.29, 1.185, 1, 1);
+    z-index: -1;
+    opacity: 80%;
+  }
+
+  &__wrapper {
+    transition: transform 0.5s cubic-bezier(0.29, 1.185, 1, 1);
+    visibility: hidden;
+    transform: translateY(130%);
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 800;
+    overflow-wrap: break-word;
+    // font-family: "Roboto Slab";
+    text-transform: titlecase;
+    letter-spacing: -3px;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  &__divider {
+    // height: 0px;
+    // width: 0px;
+    // border: 10px solid transparent;
+    // border-top: 10px solid $color-white;
+    margin: 20px auto 40px;
+    height: 10px;
+    width: 10px;
+    background: $color-grey;
+    border-radius: 50%;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 10px;
+      width: 10px;
+      background: $color-grey;
+      border-radius: 50%;
+      position: absolute;
+      left: -15px;
+    }
+    &::after {
+      content: "";
+      height: 10px;
+      width: 10px;
+      background: $color-grey;
+      border-radius: 50%;
+      position: absolute;
+      left: 15px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    padding: 10px 0 10px;
+  }
+
+  &__icons {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__icon {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+button {
+  &.btn {
+    background: $color-white;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    &--block {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &--white {
+      background: $color-white;
+
+      &:hover {
+        background-color: lighten($color-white, 20%);
+      }
+    }
+
+    &--black {
+      background: $color-black;
+      color: $color-white;
+
+      &:hover {
+        background-color: lighten($color-black, 20%);
+      }
+    }
+  }
+}
+
+.post {
+  padding: 4rem 0;
+
+  &__wrapper {
+    padding: 3rem 0;
+  }
+
+  &__title {
+    margin: 0 0 2.5rem;
+  }
+
+  &__abstract {
+    font-size: 2rem;
+  }
+
+  &__datetime {
+    color: $color-grey;
+    font-size: 1.875rem;
+    margin: 2rem 0 0;
+  }
+}
+
+.meta {
+  &__wrapper {
+    color: $color-secondary;
+    margin: 0 0 4rem;
+  }
+}

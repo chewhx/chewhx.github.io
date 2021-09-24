@@ -1,0 +1,11 @@
+@each $align in $alignments {
+  .text-#{$align} {
+    text-align: #{$align};
+  }
+}
+
+@each $just in $flexJustifications {
+  .justify-content-#{$just} {
+    justify-content: #{$just};
+  }
+}

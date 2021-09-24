@@ -1,0 +1,23 @@
+<section id="experiences" class="section">
+  <h1 class="section__title">Experiences</h1>
+  {% for each in experience %}
+  <div class="card">
+    <div class="card__header">
+      <div class="card__header__logo">
+        <img
+          src="https://ui-avatars.com/api/?size=128&background=0D8ABC&color=fff&name=SL"
+          alt="logo"
+        />
+      </div>
+      <div>
+        <p class="card__title">{{ each.job }}</p>
+        <p class="card__subtitle">
+          {{ each.company }} • {{ each.period }}• 3 years
+        </p>
+      </div>
+    </div>
+    <p class="card__text">{{ each.description }}</p>
+    <div class="card__datetime">3 years ago</div>
+  </div>
+  {% endfor %}
+</section>

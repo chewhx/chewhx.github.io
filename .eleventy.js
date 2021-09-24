@@ -11,6 +11,10 @@ module.exports = function (eleventyConfig) {
     return moment(date).utc().format("LL"); // E.g. May 31, 2019
   });
 
+  eleventyConfig.addFilter("makeUppercase", (value) => {
+    return moment(value, "DDMMYYYY").fromNow();
+  });
+
   eleventyConfig.addPassthroughCopy("assets");
   return {
     passthroughFileCopy: true,

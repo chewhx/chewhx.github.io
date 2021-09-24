@@ -1,0 +1,105 @@
+.card {
+  width: 100%;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 3rem;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    // box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    padding: -3.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+    opacity: 30%;
+    z-index: -1;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    align-items: center;
+
+    @media only screen and (max-width: $bk-tablet-port) {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__header__logo {
+    height: auto;
+    grid-row: 1 / 2;
+    padding-right: 2rem;
+    width: 10rem;
+    img {
+      border-radius: 15px;
+      width: 100%;
+      object-fit: cover;
+      @media only screen and (max-width: $bk-tablet-port) {
+        width: 8rem;
+        margin: 0 auto 2rem;
+      }
+    }
+    @media only screen and (max-width: $bk-tablet-port) {
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    grid-column: 2/3;
+
+    @media only screen and (max-width: $bk-tablet-port) {
+      margin: 0 auto 1rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    grid-column: 2/3;
+    @media only screen and (max-width: $bk-tablet-port) {
+      margin: 0 auto 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+
+    @media only screen and (max-width: $bk-tablet-port) {
+      text-align: center;
+    }
+  }
+
+  &__datetime {
+    color: $color-grey;
+    font-size: 1.55rem;
+    text-align: right;
+
+    @media only screen and (max-width: $bk-tablet-port) {
+      text-align: center;
+    }
+  }
+}

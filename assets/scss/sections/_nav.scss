@@ -1,0 +1,39 @@
+nav {
+  margin: 1rem 0 4rem;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul.nav {
+      list-style: none;
+      padding: 2rem 0;
+      width: 35%;
+      display: flex;
+
+      li.nav__link {
+        display: inline-block;
+        font-size: 1.75rem;
+        font-weight: 400;
+
+        &:not(:last-child) {
+          margin-right: 10%;
+        }
+
+        a:link,
+        a:active {
+          color: $color-primary;
+          text-decoration: none;
+        }
+
+        a:visited {
+          color: $color-primary;
+        }
+
+        a:hover {
+          color: $color-accent2;
+        }
+      }
+    }
+  }
+}
