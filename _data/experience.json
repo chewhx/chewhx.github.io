@@ -2,6 +2,7 @@
   {
     "job": "Finance and Project Manager (Arts)",
     "company": "Siong Leng Musical Association",
+    "initials": "SLMA",
     "startDate": "01012019",
     "endDate": "28092021",
     "period": "Jan 2019 - Present",
@@ -10,6 +11,7 @@
   {
     "job": "Project Assistant",
     "company": "Siong Leng Musical Association",
+    "initials": "SLMA",
     "startDate": "01052017",
     "endDate": "31122018",
     "period": "May 2017 - Dec 2018",
@@ -18,6 +20,7 @@
   {
     "job": "Marketing Executive",
     "company": "Dinomedia",
+    "initials": "DINO",
     "startDate": "01052016",
     "endDate": "31082016",
     "period": "May 2016 - Aug 2016",
@@ -25,6 +28,6 @@
   },
   {
     "job": "Volunteer",
-    "description": "Institue of Mental Health, ZeroWasteSG"
+    "company": "Institue of Mental Health, ZeroWasteSG"
   }
 ]

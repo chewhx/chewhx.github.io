@@ -1,29 +1,32 @@
 <section id="projects" class="projects">
   <h1 class="section__title">Projects</h1>
-  <div class="row">
-    <div class="col-4">
-      <div class="projectcard">
+  <div class="row--grid">
+    {% for each in project %}
+
+      <div class="project">
         <img
-          class="projectcard__img"
-          src="../../assets/icons/app.png"
+          class="project__img"
+          src="{{ each.logo }}"
           alt="project"
-        />
-        <div class="projectcard__wrapper">
-          <h1 class="projectcard__title">One Listen</h1>
-          <div class="projectcard__description">
-            Node JS application which parses text from online articles and
-            convert to audio.
+/>
+        <div class="project__wrapper">
+          <h1 class="project__title">
+            {{ each.title }}
+          </h1>
+          <div class="project__description">
+            {{ each.description }}
           </div>
-          <div class="projectcard__icons">
-            <a href="https://github.com/chewhx/project-one-listen">
-              <i class="bi bi-github projectcard__icon"></i>
+          <div class="project__icons">
+            <a href="{{ each.repo }}">
+              <i class="bi bi-github project__icon"></i>
             </a>
-            <a href="https://github.com/chewhx/project-one-listen">
-              <i class="bi bi-globe projectcard__icon"></i>
+            <a href="{{ each.url }}">
+              <i class="bi bi-globe project__icon"></i>
             </a>
           </div>
         </div>
       </div>
-    </div>
+
+    {% endfor %}
   </div>
 </section>

@@ -9,3 +9,9 @@
     justify-content: #{$just};
   }
 }
+
+@each $w, $width in $widths {
+  .w-#{$w} {
+    width: #{$width};
+  }
+}
