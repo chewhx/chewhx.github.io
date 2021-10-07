@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post
 title: "Resources for Non-Profit Organisations"
 date: 2020-08-01
 tags: ["post"]

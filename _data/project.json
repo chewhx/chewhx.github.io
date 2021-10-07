@@ -2,7 +2,7 @@
   {
     "title": "One Listen",
     "tags": ["MongoDB", "ExpressJS", "Google Cloud"],
-    "logo": "/assets/icons/app.png",
+    "logo": "../../assets/icons/app.png",
     "roundedLogo": true,
     "url": "http://one-listen.as.r.appspot.com",
     "repo": "https://github.com/chewhx/project-one-listen",
@@ -12,7 +12,7 @@
   {
     "title": "Gemini NodeJS ",
     "tags": ["NodeJS", "Crypto", "API"],
-    "logo": "/assets/icons/og.png",
+    "logo": "../../assets/icons/og.png",
     "roundedLogo": true,
     "url": "https://github.com/chewhx/gemini-api-node",
     "repo": "https://github.com/chewhx/gemini-api-node",
@@ -22,7 +22,7 @@
   {
     "title": "Guess The Flag",
     "tags": ["ReactJS", "Quiz", "MongoDB"],
-    "logo": "/assets/icons/flag.png",
+    "logo": "../../assets/icons/flag.png",
     "roundedLogo": false,
     "url": "https://flagpopquiz.netlify.app",
     "repo": "https://github.com/chewhx/guess-the-country-flags",
@@ -32,7 +32,7 @@
   {
     "title": "Blobshop",
     "tags": ["NextJS", "NodeJS"],
-    "logo": "/assets/icons/blob.svg",
+    "logo": "../../assets/icons/blob.svg",
     "roundedLogo": true,
     "url": "https://project-blobshop.vercel.app/",
     "repo": "https://github.com/chewhx/project-blobshop",

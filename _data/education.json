@@ -1,20 +1,24 @@
 [
   {
     "school": "Udemy",
+    "logo": "https://pbs.twimg.com/profile_images/1415325668787855361/nxZY4zVv.png",
     "program": "The Complete 2020 Web Development Bootcamp",
     "link": "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
   },
   {
     "school": "Udemy",
+    "logo": "https://pbs.twimg.com/profile_images/1415325668787855361/nxZY4zVv.png",
     "program": "JavaScript Algorithms and Data Structures Masterclass",
     "link": "https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/"
   },
   {
     "school": "Singapore Management University",
+    "logo": "https://www.smu.edu.sg/sites/default/files/01_icon_smu.png",
     "program": "Bachelor of Accountancy"
   },
   {
     "school": "Temasek Polytechnic",
+    "logo": "https://media.glassdoor.com/sqll/581628/temasek-polytechnic-squarelogo-1536805350732.png",
     "program": "Diploma in Accounting & Finance"
   }
 ]

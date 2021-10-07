@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post
 date: 2021-03-25
 title: "Reacting to custom hooks"
 categories: react programming customhooks

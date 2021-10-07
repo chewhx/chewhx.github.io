@@ -1,0 +1,134 @@
+@import "./scss/variables";
+@import "./scss/utilities";
+@import "./scss/mixins";
+@import "./scss/dev";
+@import "./scss/base";
+@import "./scss/typography";
+@import "./scss/layout";
+
+// sections
+@import "./scss/sections/nav";
+@import "./scss/sections/brand";
+// @import "./scss/sections/summary";
+// @import "./scss/sections/card";
+// @import "./scss/sections/skills";
+// @import "./scss/sections/project";
+
+// Dev
+// @include putBorders();
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+.section__title {
+  // font-size: 4rem;
+  // letter-spacing: -0.1rem;
+  letter-spacing: -0.2rem;
+
+  padding: 0 9rem;
+  font-weight: 400;
+}
+
+.colored {
+  font-size: 7rem;
+}
+
+button {
+  &.btn {
+    background: $color-white;
+    padding: 2.5rem 3rem;
+    border-radius: 50px;
+    border: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    &--block {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &--white {
+      background: $color-white;
+
+      &:hover {
+        background-color: lighten($color-white, 20%);
+      }
+    }
+
+    &--black {
+      background: $color-black;
+      color: $color-white;
+
+      &:hover {
+        background-color: lighten($color-black, 20%);
+      }
+    }
+  }
+}
+
+.post {
+  padding: 4rem 0;
+
+  &__wrapper {
+    padding: 3rem 0;
+  }
+
+  &__title {
+    margin: 0 0 2.5rem;
+  }
+
+  &__abstract {
+    font-size: 2rem;
+  }
+
+  &__datetime {
+    color: $color-grey;
+    font-size: 1.875rem;
+    margin: 2rem 0 0;
+  }
+}
+
+.meta {
+  &__wrapper {
+    color: $color-secondary;
+    margin: 0 0 4rem;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: $color-primary;
+  }
+}
+
+.blinking-cursor {
+  // border: 1px solid black;
+  // color: #2e3d48;
+  // font-family: monospace;
+  height: 7rem;
+  display: inline-block;
+  width: 0.5rem;
+  margin-bottom: -1.2rem;
+  margin-left: -1rem;
+  background-color: $color-primary;
+  animation: 1s blink infinite;
+}
+
+footer {
+  padding: 5rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}

@@ -1,0 +1,31 @@
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #9d9d9d;
+$color-primary: #111d5e;
+$color-secondary: #c70039;
+$color-accent: #c0e218;
+$color-accent2: #f37121;
+
+$bk-tablet-land: 1024px;
+$bk-tablet-port: 768px;
+$bk-phone: 576px;
+
+$flexJustifications: (
+  "start",
+  "center",
+  "space-between",
+  "space-around",
+  "space-evenly",
+  "right",
+  "left",
+  "flex-start",
+  "flex-end"
+);
+
+$alignments: ("left", "center", "right");
+
+$widths: (
+  "50": "50%",
+  "75": "75%",
+  "100": "100%",
+);

@@ -1,0 +1,22 @@
+[
+  {
+    "placeholder": "Works",
+    "icon": "bi bi-briefcase",
+    "url": "/works"
+  },
+  {
+    "placeholder": "Blog",
+    "icon": "bi bi-journal-text",
+    "url": "/blog"
+  },
+  {
+    "placeholder": "Resume",
+    "icon": "bi bi-file-earmark-person",
+    "url": "/resume"
+  },
+  {
+    "placeholder": "Contact",
+    "icon": "bi bi-bell",
+    "url": "/contact"
+  }
+]
