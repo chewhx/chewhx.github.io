@@ -1,0 +1,20 @@
+.skills {
+  &__logo {
+    padding: 1.5rem;
+    width: 130px;
+    border-radius: 50%;
+    filter: invert(100%);
+    &:hover {
+      filter: none;
+      // box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+      // transform: scale(1.03);
+    }
+  }
+
+  &__logocaption {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    display: block;
+    text-transform: uppercase;
+  }
+}
