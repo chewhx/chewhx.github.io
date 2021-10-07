@@ -1,5 +1,7 @@
+$monospace: "Space Mono";
+$sans-serif: "Inter";
+
 a {
-  font-weight: 600;
   &:link,
   :active {
     color: $color-primary;

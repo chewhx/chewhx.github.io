@@ -1,5 +1,5 @@
 .container {
-  padding: 0 25rem;
+  padding: 0 15rem;
   max-width: 1440px;
   margin: 0 auto;
   @media only screen and (max-width: $bk-tablet-land) {
@@ -16,10 +16,11 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 5rem;
 
   @for $i from 1 through 12 {
     .col-#{$i} {
-      width: 100% / (12 / $i);
+      width: calc((100% / 12) * #{$i});
     }
   }
 

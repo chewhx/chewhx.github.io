@@ -1,32 +1,19 @@
 <section id="projects" class="projects">
-  <h1 class="section__title">Projects</h1>
-  <div class="row--grid">
-    {% for each in project %}
-
-      <div class="project">
-        <img
-          class="project__img"
-          src="{{ each.logo }}"
-          alt="project"
-/>
-        <div class="project__wrapper">
-          <h1 class="project__title">
-            {{ each.title }}
-          </h1>
-          <div class="project__description">
-            {{ each.description }}
-          </div>
-          <div class="project__icons">
-            <a href="{{ each.repo }}">
-              <i class="bi bi-github project__icon"></i>
-            </a>
-            <a href="{{ each.url }}">
-              <i class="bi bi-globe project__icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    {% endfor %}
+  <div class="project">
+    <div class="project__title">
+      <a href="/">
+    Pet Project 1
+    </a>
+    </div>
+    <div class="project__description">
+      Read long feature articles like you would listen to audiobooks.
+    </div>
   </div>
+  <div class="project">
+    <div class="project__title">Pet Project 2</div>
+    <div class="project__description">
+      I learnt programming, because I wanted to make a quiz game. I still am working on it.
+    </div>
+  </div>
+
 </section>

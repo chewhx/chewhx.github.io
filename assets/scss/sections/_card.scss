@@ -1,22 +1,26 @@
 .card {
-  width: 110%;
-  // box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 3rem;
+  width: 100%;
+  padding: 4rem 9rem;
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
-  margin-left: -2.5%;
+  border-top: 0.1rem solid $color-black;
+
+  &:last-child {
+    border-bottom: 0.1rem solid $color-black;
+  }
 
   @media only screen and (max-width: $bk-phone) {
     width: 100%;
     margin-left: 0;
+    text-align: center;
   }
 
-  &:hover {
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);
-  }
+  // &:hover {
+  // border: 0;
+  // box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  // transform: scale(0.98);
+  // }
 
   // &:not(:last-child) {
   //   margin-bottom: 1rem;
@@ -54,9 +58,10 @@
     grid-row: 1 / 2;
     width: 100%;
     height: 100%;
+    background-color: $color-white;
 
     img {
-      border-radius: 15px;
+      // border-radius: 15px;
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -106,10 +111,6 @@
   &__datetime {
     color: $color-grey;
     font-size: 1.55rem;
-    text-align: left;
-
-    @media only screen and (max-width: $bk-tablet-port) {
-      text-align: center;
-    }
+    margin-bottom: 2rem;
   }
 }

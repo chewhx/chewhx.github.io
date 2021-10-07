@@ -1,27 +1,13 @@
 .project {
   @extend .card;
   height: 100%;
-  width: 100%;
-  margin: 0;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  width: 86%;
+  margin: 0 auto;
+  border: 0.1rem solid $color-black;
+  border-bottom: 0;
 
-  &:hover {
-    transform: none;
-  }
-
-  &:hover .project__img {
-    transform: scale(1.5);
-    opacity: 30%;
-  }
-
-  &:hover .project__wrapper {
-    transform: translateY(0px);
-    visibility: visible;
-  }
-
-  &:hover .project__divider {
-    // border-bottom: 15px solid $color-secondary;
-    border-top: 0;
+  &:last-child {
+    border-bottom: 0.1rem solid $color-black;
   }
 
   &__img {
@@ -42,49 +28,24 @@
     transform: translateY(130%);
   }
 
-  &__title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    overflow-wrap: break-word;
-    text-transform: titlecase;
-    letter-spacing: -2px;
-    width: 100%;
-    padding: 0 5px;
-    text-align: center;
-  }
-
-  &__divider {
-    margin: 20px auto 40px;
-    height: 10px;
-    width: 10px;
-    background: $color-grey;
-    border-radius: 50%;
-    position: relative;
-
-    &::before {
-      content: "";
-      height: 10px;
-      width: 10px;
-      background-color: $color-grey;
-      border-radius: 50%;
-      position: absolute;
-      left: -15px;
-    }
-    &::after {
-      content: "";
-      height: 10px;
-      width: 10px;
-      background: $color-grey;
-      border-radius: 50%;
-      position: absolute;
-      left: 15px;
-    }
-  }
-
   &__description {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    padding: 5px 0;
+    font-size: 3rem;
+    text-transform: titlecase;
+    font-weight: 100;
+    // overflow-wrap: break-word;
+    // letter-spacing: -2px;
+    width: 100%;
+    // text-align: center;
+  }
+
+  &__title,
+  &__title a:link {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    background-color: $color-accent;
+    width: fit-content;
+    padding: 0 1.5rem;
   }
 
   &__icons {

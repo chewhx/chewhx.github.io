@@ -2,23 +2,29 @@
   <h1 class="section__title">Experiences</h1>
   {% for each in experience %}
     <div class="card">
-      <div class="card__header">
-        <div class="card__header__logo">
+      <div class="card__body">
+        {# <div class="card__header"> #}
+        {# <div class="card__header__logo">
           <img
           src=" 
           {{ 'https://ui-avatars.com/api/?size=128&background=0D8ABC&color=fff&name=' + (each.initials or each.company) }} "
           alt="logo"
 />
+        </div> #}
+        <div class="card__datetime">
+          {% if each.startDate and each.endDate %}
+            {{ each.startDate | sgDate }} — {{ each.endDate | sgDate }}
+          {% endif %}
         </div>
         <div>
           <p class="card__title">{{ each.job }}</p>
           <p class="card__subtitle">
-            {{ each.company }} • {{ each.period }}• 3 years
-        </p>
+            {{ each.company }}
+          </p>
         </div>
+        {# </div> #}
+        <p class="card__text">{{ each.description }}</p>
       </div>
-      <p class="card__text">{{ each.description }}</p>
-      <div class="card__datetime">3 years ago</div>
     </div>
   {% endfor %}
 </section>

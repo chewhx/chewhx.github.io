@@ -9,10 +9,10 @@
 // sections
 @import "./scss/sections/nav";
 @import "./scss/sections/brand";
-@import "./scss/sections/summary";
-@import "./scss/sections/card";
-@import "./scss/sections/skills";
-@import "./scss/sections/project";
+// @import "./scss/sections/summary";
+// @import "./scss/sections/card";
+// @import "./scss/sections/skills";
+// @import "./scss/sections/project";
 
 // Dev
 // @include putBorders();
@@ -28,7 +28,10 @@
 .section__title {
   // font-size: 4rem;
   // letter-spacing: -0.1rem;
-  margin: 6.5rem 0 3.5rem;
+  letter-spacing: -0.2rem;
+
+  padding: 0 9rem;
+  font-weight: 400;
 }
 
 .colored {
@@ -99,4 +102,33 @@ button {
     color: $color-secondary;
     margin: 0 0 4rem;
   }
+}
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: $color-primary;
+  }
+}
+
+.blinking-cursor {
+  // border: 1px solid black;
+  // color: #2e3d48;
+  // font-family: monospace;
+  height: 7rem;
+  display: inline-block;
+  width: 0.5rem;
+  margin-bottom: -1.2rem;
+  margin-left: -1rem;
+  background-color: $color-primary;
+  animation: 1s blink infinite;
+}
+
+footer {
+  padding: 5rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }

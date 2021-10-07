@@ -2,17 +2,22 @@
   <div class="container">
     <div class="navbar">
       <ul class="nav w-100 justify-content-center">
-        {% for item in nav %}
+        <li class="nav__link">
+          <a href="https://www.linkedin.com/in/chewhx/" target="_blank">
+      RESUME
+      </a>
+        </li>
+        {# {% for item in nav %}
           <li class="nav__link">
-            <a href="{{item.url}}">
+            <a href={{item.url}}>
               {{item.placeholder}}
             </a>
           </li>
-        {% endfor %}
+        {% endfor %} #}
       </ul>
     </div>
   </div>
-  <div class="floater">
+  {# <div class="floater">
     <div class="navbar">
       <ul class="nav--mobile w-100 justify-content-center">
         {% for item in nav %}
@@ -24,6 +29,6 @@
           </li>
         {% endfor %}
       </ul>
-    </div>
-  </div>
+    </div> #}
+</div>
 </nav>
