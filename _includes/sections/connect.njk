@@ -4,15 +4,21 @@
       <h3>Connect with me</h3>
       <hr/>
     </div>
-    <ul class="list-unstyled m-0">
+    <div class="row my-3 my-md-1">
       {% for each in connect %}
-        <li>
-      On {{ each.network }}: <a href="{{each.url}}" target="_blank" rel="noreferrer">{{each.url}}</a>
-        </li>
+        <div class="col-md-2">
+          {{ each.network }}: 
+      </div>
+        <div class="col-md-10">
+          <a href="{{each.url}}" target="_blank" rel="noreferrer">{{each.url}}</a>
+        </div>
       {% endfor %}
-      <li>
-      On Email: hello@chewhx.com
-      </li>
-    </ul>
+      <div class="col-md-2">
+         Email: 
+      </div>
+      <div class="col-md-10">
+          hello@chewhx.com
+        </div>
+    </div>
   </div>
 </section>
