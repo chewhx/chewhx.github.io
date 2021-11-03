@@ -154,7 +154,8 @@
   <p>03/11/2021</p>
 </div>
 <article class="monospace">
-  <h1>08:46:14</h1>
+  <!-- cSpell:disable -->
+<h1>08:46:14</h1>
 <p>List of things to learn:</p>
 <pre><code>- blockchain development (web3, truffle, ganache, solidity)
 - C# .NET API - to understand server code at work
@@ -185,6 +186,132 @@
 <h1>18:54:49</h1>
 <p>From work: to learn about software security: <a href="https://www.hacksplaining.com/lessons">https://www.hacksplaining.com/lessons</a></p>
 <p>Found this step-by-step interactive application to learn dapps development: <a href="https://www.hacksplaining.com/lessons">https://www.hacksplaining.com/lessons</a></p>
+<h1>19:02:05</h1>
+<p>Learning notes:</p>
+<ul>
+<li>
+<p>Solidity has a few kinds of functions: private, public, pure, view, internal, and external</p>
+</li>
+<li>
+<p>All functions are public by default</p>
+</li>
+<li>
+<p>Functions can return multiple values, unlike regular javascript functions.</p>
+</li>
+<li>
+<p><strong>view functions</strong> are only for viewing date from the app, and not modifying it</p>
+</li>
+<li>
+<p><strong>pure functions</strong> don't access any values from the state of the app - like a multiply function</p>
+</li>
+<li>
+<p><strong>internal</strong> is the same as private, except that it's also accessible to contracts that inherit from this contract. (Hey, that sounds like what we want here!).</p>
+</li>
+<li>
+<p><strong>external</strong> is similar to public, except that these functions can ONLY be called outside the contract — they can't be called by other functions inside that contract. We'll talk about why you might want to use external vs public later.</p>
+</li>
+<li>
+<p>Ethereum has the hash function <em>keccak256</em> built in, which is a version of SHA3. A hash function basically maps an input into a random 256-bit hexadecimal number. A slight change in the input will cause a large change in the hash.</p>
+</li>
+<li>
+<p>Smart contracts can have event listeners to <em>listen</em> for certain events, and then take action. (Kind of like nodejs event listeners)</p>
+</li>
+<li>
+<p>Frontend applications can listen in on these events and take action.</p>
+</li>
+<li>
+<p>Progress of zombie smart contract up to Chapter 13:</p>
+</li>
+</ul>
+<pre><code class="language-javascript">pragma solidity &gt;=0.5.0 &lt;0.6.0;
+
+contract ZombieFactory {
+
+    // declare our event here
+    event NewZombie(uint zombieId, string name, uint dna);
+    uint dnaDigits = 16;
+    uint dnaModulus = 10 ** dnaDigits;
+
+    struct Zombie {
+        string name;
+        uint dna;
+    }
+
+    Zombie[] public zombies;
+
+    function _createZombie(string memory _name, uint _dna) private {
+        uint id = zombies.push(Zombie(_name, _dna)) - 1;
+        // and fire it here
+        emit NewZombie(id, _name, _dna);
+    }
+
+    function _generateRandomDna(string memory _str) private view returns (uint) {
+        uint rand = uint(keccak256(abi.encodePacked(_str)));
+        return rand % dnaModulus;
+    }
+
+    function createRandomZombie(string memory _name) public {
+        uint randDna = _generateRandomDna(_name);
+        _createZombie(_name, randDna);
+    }
+}
+</code></pre>
+<ul>
+<li>
+<p>Source code for zombie lesson: <a href="https://github.com/loomnetwork/cryptozombies-lesson-code">https://github.com/loomnetwork/cryptozombies-lesson-code</a></p>
+</li>
+<li>
+<p>in Solidity, use <em>require</em> function to compare and verify certain conditions. It does not have native string comparisons, so for strings we need to compare their <em>keccak256</em> hash</p>
+</li>
+<li>
+<p>State variables (variables declared outside of functions) are by default storage and written permanently to the blockchain, while variables declared inside functions are memory and will disappear when the function call ends.</p>
+</li>
+<li>
+<p>Usually Solidity will handle the storage, <strong>except when dealing with structs and arrays within functions</strong>.</p>
+</li>
+<li>
+<p>Interacting with other contracts</p>
+<ul>
+<li>Need to declare an interface which is a contract with functions you want to call, without curly braces:</li>
+</ul>
+<pre><code class="language-javascript">contract NumberInterface {
+function getNum(address _myAddress) public view returns (uint);
+}
+</code></pre>
+</li>
+</ul>
+<h1>21:04:22</h1>
+<p>CryptoZombies:</p>
+<ol>
+<li>Lesson 1 - Write smart contracts</li>
+<li>Lesson 2 - Interacting with other contracts</li>
+</ol>
+<h1>22:05:05</h1>
+<p><a href="https://youtu.be/mnmYwRoSisg">Video: 10 Must Know Git Commands That Almost Nobody Knows</a></p>
+<p><a href="https://blog.webdevsimplified.com/2021-10/advanced-git-commands/">Article: 10 Must Know Git Commands That Almost Nobody Knows</a></p>
+<ul>
+<li>setting a git alias</li>
+<li><code>git commit .</code> and <code>git commit -A</code></li>
+<li>learn more on git stash</li>
+<li><code>git log</code></li>
+<li><code>git log --graph --decorate --oneline</code></li>
+<li><code>git branch -vv</code></li>
+<li><code>git log -S &quot;serachterm&quot;</code></li>
+</ul>
+<p><a href="https://youtu.be/-aPoRU5W8lA">Git stash tutorial. How to save changes for later in git.</a></p>
+<pre><code>SYNOPSIS
+       git stash list [&lt;options&gt;]
+       git stash show [&lt;stash&gt;]
+       git stash drop [-q|--quiet] [&lt;stash&gt;]
+       git stash ( pop | apply ) [--index] [-q|--quiet] [&lt;stash&gt;]
+       git stash branch &lt;branchname&gt; [&lt;stash&gt;]
+       git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+                    [-u|--include-untracked] [-a|--all] [-m|--message &lt;message&gt;]
+                    [--] [&lt;pathspec&gt;...]]
+       git stash clear
+       git stash create [&lt;message&gt;]
+       git stash store [-m|--message &lt;message&gt;] [-q|--quiet] &lt;commit&gt;
+</code></pre>
 
 </article>
 
