@@ -6,7 +6,7 @@
     "watch:sass": "sass --no-source-map --watch scss/styles.scss:css/styles.css",
     "build:sass": "sass --no-source-map scss:css",
     "build": "npx eleventy",
-    "watch:serve": "npx eleventy --serve",
+    "watch:serve": "npx eleventy --serve --incremental",
     "serve": "npx eleventy --serve",
     "start": "npm-run-all build:sass --parallel watch:*",
     "debug": "DEBUG=* npx eleventy"
