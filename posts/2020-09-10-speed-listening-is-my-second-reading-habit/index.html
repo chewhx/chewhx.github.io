@@ -103,45 +103,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <!-- Dev Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Bootstrap Icons -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
+/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css"/>
 
     <title>Chew Han Xiang | chewhx.com</title>
   </head>
   <body>
     <header>
-    <nav>
+      <nav class="navbar navbar-expand-lg navbar-light px-3">
   <div class="container">
-    <div class="navbar">
-      <ul class="nav w-100 justify-content-center">
-        <li class="nav__link">
-          <a href="https://www.linkedin.com/in/chewhx/" target="_blank">
-      RESUME
-      </a>
-        </li>
+    <a class="navbar-brand h3" href="/">
+      chewhx.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
         
-      </ul>
+          <a class="nav-link" href="/#projects">Works</a>
+        
+          <a class="nav-link" href="/#devjournal">Journal</a>
+        
+          <a class="nav-link" href="/#connect">Connect</a>
+        
+      </div>
     </div>
   </div>
-  
-</div>
 </nav>
     </header>
     <main>
-     
-      <article>
-<a href="/blog">
-<i class="bi bi-arrow-left" style="font-size: 2.5rem;"></i>
-</a>
-<h1>Speed listening is my second reading habit </h1>
-<h2>Second reading habit</h2>
+
+      <div class="container text-align-right">
+  <a href="/devjournal">
+    <i class="bi bi-arrow-left" style="font-size: 2.5rem;"></i>
+  </a>
+  <h1>Speed listening is my second reading habit</h1>
+  <p>10/09/2020</p>
+</div>
+<article class="monospace">
+  <h2>Second reading habit</h2>
 <p>The phenomenon is called “<a href="https://en.wikipedia.org/wiki/Speed_learning#Speed_listening">speed listening</a>”. I was late to the game. The truth about listening to podcasts at 1x speed was that it quickly became boring and mentally dull. To listen carefully to every word and phrase spoken, fearing of missing out on details, it took me a few days to finish an hour or two long podcast episode. My thoughts on listening to audiobooks? Ridiculous. I would take less time overall to silent read a seven-hour long audiobook.</p>
 <p>I was averaging between 15-25 books per year[^1], and I thought I could do better. Simply because I took short breaks in between bouts of successive reading and within those breaks, I fell prey to the pangs of idle infinite scrolling.</p>
 <p>Then I chanced upon that <a href="https://youtu.be/Fk3csAdegBI">one simple habit which changed Ali Abdaal’s life</a> as it did subsequently change mine too. He reframed the concept of listening to audio content (audiobooks, podcast, or audio articles) into two main benefits:</p>
@@ -195,16 +209,17 @@
 [^3]: I switch them off to conserve battery. It plays a sound notification when powering down, so I keep them in my ears. Or at least one side of it.</p>
 
 </article>
-        
+
     </main>
     <footer>
   <div class="container text-center">
-    <p>
+    <small>
       Built with <a href="https://www.11ty.dev">11ty</a>
-    </p>
-    <p>
+    </small>
+    <br/>
+    <small>
       Hosted on <a href="https://pages.github.com">GitHub Page</a>
-    </p>
+    </small>
   </div>
 </footer>
   </body>

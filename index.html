@@ -103,73 +103,163 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <!-- Dev Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Bootstrap Icons -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
+/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css"/>
 
     <title>Chew Han Xiang | chewhx.com</title>
   </head>
   <body>
     <header>
-    <nav>
+      <nav class="navbar navbar-expand-lg navbar-light px-3">
   <div class="container">
-    <div class="navbar">
-      <ul class="nav w-100 justify-content-center">
-        <li class="nav__link">
-          <a href="https://www.linkedin.com/in/chewhx/" target="_blank">
-      RESUME
-      </a>
-        </li>
+    <a class="navbar-brand h3" href="/">
+      chewhx.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
         
-      </ul>
+          <a class="nav-link" href="/#projects">Works</a>
+        
+          <a class="nav-link" href="/#devjournal">Journal</a>
+        
+          <a class="nav-link" href="/#connect">Connect</a>
+        
+      </div>
     </div>
   </div>
-  
-</div>
 </nav>
     </header>
     <main>
-     
+
       
-<div class="brand">
-  <img
-    src="../../assets/avatar.png"
-    alt="chewhx memoji"
-    class="brand__memoji"
-/>
-  <div class="brand__greeting">Chew Han Xiang</div>
-  <div class="brand__subheader">
-  Jr Frontend Developer @ Lyte Ventures
-  
+<section id="brand">
+  <div class="container">
+    <div class="row">
+      <h3>Hi, I'm Han Xiang</h3>
+      <hr/>
+    </div>
+    <p>I'm a Junior Frontend Developer @ <a href="https://www.lyteventures.com/">Lyte Ventures</a>. I code mainly in NodeJS and React. My main interests are building solutions for productivity, fintech and lifestyle applications.</p>
+<p>Before take up development, I managed programmes, budgets, and grant compliance at a <a href="https://www.siongleng.com/">non-profit arts organisation</a>. I also volunteered at the Institute of Mental Health and for <a href="http://www.zerowastesg.com/">ZeroWasteSG</a>.</p>
+<p>I don't fit your typical profile of a developer, because I studied accountancy for my <a href="https://accountancy.smu.edu.sg/">bachelor's</a> and <a href="https://www.tp.edu.sg/schools-and-courses/students/schools/bus/accountancy-finance.html">diploma</a>. That was before I realised I wanted to work outside of the accounting field. Strangely, I never regretted studying it because the knowledge and skills gained were relevant and useful in my life.</p>
+<p>I started with learning <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">web development</a> in Aug 2020.</p>
+
+  </section>
+<section id="projects">
+  <div class="container">
+    <div class="row">
+      <h3>Creator of</h3>
+      <hr/>
+    </div>
+    <div class="row">
+      <ul>
+<li>
+<p>A pop quiz game, to <a href="https://flagpopquiz.netlify.app">test your general knowledge of country flags</a>.</p>
+</li>
+<li>
+<p>A web application to <a href="http://one-listen.as.r.appspot.com">listen to web articles</a>.<br>
+<em>I'm working on an update to expand on the idea.</em></p>
+</li>
+<li>
+<p>A cloud function to <a href="https://github.com/chewhx/workflows">import book notes &amp; highlights from Apple Books, into Notion</a>.</p>
+</li>
+<li>
+<p>A <a href="https://project-blobshop.vercel.app/">blobshop</a> — I made it when I though this was cool.</p>
+</li>
+</ul>
+
+    </div>
   </div>
-  
-  <div class="brand__summary" contenteditable="true">
-    <p>
-     while (alive): be curious. leave everything better than you found it 
-    </p>
-    <div class="blinking-cursor"></div>
+</section>
+<section id="devjournal">
+  <div class="container">
+    <div class="row">
+      <h3>Dev Journal</h3>
+      <hr/>
+    </div>
+
+    
+      
+        <div class="row my-3 my-md-1">
+          <div class="col-md-2">
+            03/11/2021
+          </div>
+          <div class="col-md-10">
+            <a href="/posts/1635900356567/" class="link-info">
+              Morning Brew
+            </a>
+          </div>
+        </div>
+      
+    
+      
+        <div class="row my-3 my-md-1">
+          <div class="col-md-2">
+            02/11/2021
+          </div>
+          <div class="col-md-10">
+            <a href="/posts/1635835315998/" class="link-info">
+              Right here, right now
+            </a>
+          </div>
+        </div>
+      
+    
+    
+  </section>
+<section id="connect">
+  <div class="container">
+    <div class="row">
+      <h3>Connect with me</h3>
+      <hr/>
+    </div>
+    <ul class="list-unstyled m-0">
+      
+        <li>
+      On LinkedIn: <a href="https://www.linkedin.com/in/chewhx/">https://www.linkedin.com/in/chewhx/</a>
+        </li>
+      
+        <li>
+      On Facebook: <a href="https://www.facebook.com/chew.h.xiang">https://www.facebook.com/chew.h.xiang</a>
+        </li>
+      
+        <li>
+      On GitHub: <a href="https://github.com/chewhx">https://github.com/chewhx</a>
+        </li>
+      
+      <li>
+      On Email: hello@chewhx.com
+      </li>
+    </ul>
   </div>
-</div>
+</section>
 
 
-
-
-        
     </main>
     <footer>
   <div class="container text-center">
-    <p>
+    <small>
       Built with <a href="https://www.11ty.dev">11ty</a>
-    </p>
-    <p>
+    </small>
+    <br/>
+    <small>
       Hosted on <a href="https://pages.github.com">GitHub Page</a>
-    </p>
+    </small>
   </div>
 </footer>
   </body>

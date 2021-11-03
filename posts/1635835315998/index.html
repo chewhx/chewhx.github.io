@@ -151,18 +151,54 @@
   <a href="/devjournal">
     <i class="bi bi-arrow-left" style="font-size: 2.5rem;"></i>
   </a>
-  <h1>Book Review - The Body: A Guide for Occupants by Bill Bryson</h1>
-  <p>28/08/2020</p>
+  <h1>Right here, right now</h1>
+  <p>02/11/2021</p>
 </div>
 <article class="monospace">
-  <p>As a species, we don’t care for our bodies enough until it fails us. We exemplify our mental capabilities to explain progress and success while shunning away from the biology which makes it possible in the first place. Even with digital technology today we still interface with our bodies. Faces and colour don’t tell us as much the person underneath, but body shapes and size lie less often about our constitution. Our bodies, like languages, are mediums we used to communicate. They fill the gaps between the meeting of minds.</p>
-<p>In the year when a pandemic reign, it seems appropriate to renew one’s understanding and appreciation for our biochemistry.</p>
-<p>The book is organised into independent chapters. Chapters 12 and 20 elucidate on matters regarding the immune system and diseases respectively.</p>
-<p>Bryson writes a mini-encyclopedia or wiki on our bodies which reads easy and relatable. He does not bother to bog the readers down with many backstories and medical facts, preferring to skip over to more interesting topics to keep us entertained.</p>
-<p>There were anecdotes of early surgery not for the weak stomach. They highlighted dramatically, the progress we’ve made since, from early medical science and surgical innovation. Without the privilege of anaesthesia <a href="https://youtu.be/B_tTymvDWXk">(here's an interesting video about how anaesthetics work</a> in the past, patients had to endure the pains of probe and incision, which left enduring physical and mental trauma.</p>
-<p>This is a recommended read for those who love non-fiction and read for the passion of knowledge. You will be entertained and for the geeks, there are comprehensive endnotes on the sources for one to explore further readings. (I’m not one of them)</p>
-<p>But even for the general reader, you will gain a renewed appreciation for your bodily functions and understand why you should take better care of them. Our heart is an engine that never stops, while our immune system is the best coalition of armed forces out there, waging a never-ending war against the invading virus and harmful bacteria. Your sight contributes just as much to what you taste. You should fight with your jaws and not your fist, even though it is considered a “dirty” fight. We are more likely to die of mismatch diseases conjured by our lifestyle, rather than cancer or viral plague. Evolution and bipedalism are the true culprits of painful childbirth.</p>
-<p>I hope this read hits you like a sharp pain, then throbbed in your minds over the years.</p>
+  <h1>14:56:21</h1>
+<p>I'll starting a public dev journal here.</p>
+<p>I have, intermittenly, been &quot;writing&quot; or logging down notes on programming since 2020. A journaling habit records my journey and learning. It helps me remember the past and look back to see how much progress I've made. It also serve sort of an archive where I can go back to look for ideas and that learning point or tutorial on a certain topic.</p>
+<p>I'm keeping a public journal here, as I hope some of my ideas and logs can reach and inform people. I don't think I can write blog posts or articles, so I guess my readers will have to make do with my ramblings and notes.</p>
+<h1>15:53:58</h1>
+<p>One of the most annoying thing about taking notes, is the resistance to actual writing. I prefer type than handwritten, because I usually think faster than I can write. I'm looking to create a CLI tool using NodeJS. It will create a new file in the 'posts' folder in my current github pages repo, which is used to host this website and update the dev journal.</p>
+<p>The ideal workflow should work like this:</p>
+<pre><code class="language-bash"># To create a new file with layout
+journal new
+
+# To commit the new journal entry
+git add .
+git commit -m &quot;some commit message&quot;
+git push
+</code></pre>
+<h1>16:28:18</h1>
+<p>I created a markdown snippet in VS Code to add the current timestamp.</p>
+<ol>
+<li>Cmd + Shift + P to open the command panel</li>
+<li>Select &quot;Preferences: Configure User Snippets&quot;</li>
+<li>Search for &quot;markdown&quot; and open &quot;markdown.json&quot;</li>
+<li>Insert the follow:</li>
+</ol>
+<pre><code class="language-json">  &quot;Insert Timestamp&quot;: {
+    &quot;prefix&quot;: &quot;timenow&quot;,
+    &quot;body&quot;: [&quot;$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND&quot;, &quot;$0&quot;],
+    &quot;description&quot;: &quot;Insert current timestamp in hr:min:sec&quot;
+  }
+</code></pre>
+<ol start="5">
+<li>Open the command panel again in step 1</li>
+<li>Select &quot;Preferences: Open Settings(JSON)&quot;</li>
+<li>Add the following settings:</li>
+</ol>
+<pre><code class="language-json"> &quot;[markdown]&quot;: {
+    &quot;editor.wordWrap&quot;: &quot;on&quot;,
+    &quot;editor.quickSuggestions&quot;: true
+  }
+</code></pre>
+<p>Now if you are writing markdown files in VS Code, you should be able to use the snippet with shortcut prefix 'datenow' to insert a timestamp (hr:min:sec)</p>
+<h1>18:35:36</h1>
+<p>When writing React applications, I'm biased towards using <a href="https://react-query.tanstack.com/">react-query</a> and <a href="https://formik.org/docs/overview">formik</a> from the <a href="https://tanstack.com/">TanStack</a> library.</p>
+<p>Not sure, if this is over-reliance on certain open source packages.</p>
+<p>The useQuery and useMutation hooks are really powerful for fetching and posting requests, with side-effects, and not having to managed React states and useEffects.</p>
 
 </article>
 
