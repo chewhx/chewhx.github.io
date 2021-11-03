@@ -11,11 +11,21 @@
           <div class="col-md-2">
             {{ each.data.date | sgDate }}
           </div>
-          <div class="col-md-10">
+          <div class="col">
             <a href="{{ each.data.external_url or each.url | url }}" class="link-info">
               {{ each.data.title }}
             </a>
           </div>
+          {# <div class="col-md-3 justify-content-end">
+            {% for tag in each.data.categories %}
+              {% if (loop.index <= 2) %}
+                <span style="font-size: 0.85rem;" class="badge rounded-pill bg-primary">{{tag}}</span>
+              {% endif %}
+            {% endfor %}
+            {% if each.data.categories.length > 2 %}
+              <span style="font-size: 0.85rem" class="badge rounded-pill bg-primary">{{ each.data.categories.length - 2}}+</span>
+            {% endif %}
+          </div> #}
         </div>
       {% endif %}
     {% endfor %}

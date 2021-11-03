@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "watch:sass": "sass --no-source-map --watch assets/styles.scss:assets/css/styles.css",
-    "build:sass": "sass assets/scss:assets/css",
+    "watch:sass": "sass --no-source-map --watch scss/styles.scss:css/styles.css",
+    "build:sass": "sass --no-source-map scss:css",
     "build": "npx eleventy",
     "watch:serve": "npx eleventy --serve",
     "serve": "npx eleventy --serve",
