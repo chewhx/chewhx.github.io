@@ -1,42 +1,32 @@
 [
   {
     "title": "One Listen",
-    "tags": ["MongoDB", "ExpressJS", "Google Cloud"],
-    "logo": "../../assets/icons/app.png",
-    "roundedLogo": true,
     "url": "http://one-listen.as.r.appspot.com",
     "repo": "https://github.com/chewhx/project-one-listen",
-    "description": "Node JS application which parses text from online articles and convert to audio.",
-    "small": "(Hosted on free tier, may take some time to load)"
+    "desc": "A web application to listen to web articles."
   },
   {
     "title": "Gemini NodeJS ",
-    "tags": ["NodeJS", "Crypto", "API"],
-    "logo": "../../assets/icons/og.png",
-    "roundedLogo": true,
     "url": "https://github.com/chewhx/gemini-api-node",
     "repo": "https://github.com/chewhx/gemini-api-node",
-    "description": "Get past trading and transfer data from Gemini Crypto Exchange API. Summarise your coin assets owned and average cost.",
-    "small": ""
+    "desc": ""
   },
   {
     "title": "Guess The Flag",
-    "tags": ["ReactJS", "Quiz", "MongoDB"],
-    "logo": "../../assets/icons/flag.png",
-    "roundedLogo": false,
     "url": "https://flagpopquiz.netlify.app",
     "repo": "https://github.com/chewhx/guess-the-country-flags",
-    "description": "Pop quiz. Guess which countries the flags belong to. What's your highest score?",
-    "small": ""
+    "desc": "A pop quiz game, to test your general knowledge of country flags."
   },
   {
     "title": "Blobshop",
-    "tags": ["NextJS", "NodeJS"],
-    "logo": "../../assets/icons/blob.svg",
-    "roundedLogo": true,
+
     "url": "https://project-blobshop.vercel.app/",
-    "repo": "https://github.com/chewhx/project-blobshop",
-    "description": "Create digital blobs, post them to public gallery, or save locally.",
-    "small": ""
+    "repo": "https://github.com/chewhx/project-blobshop"
+  },
+  {
+    "title": "Workflows",
+    "url": "https://github.com/chewhx/workflows",
+    "repo": "https://github.com/chewhx/workflows",
+    "desc": "A cloud function to import book notes & highlights from Apple Books, into Notion."
   }
 ]

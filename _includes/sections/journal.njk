@@ -1,0 +1,27 @@
+<section id="devjournal">
+  <div class="container">
+    <div class="row">
+      <h3>Dev Journal</h3>
+      <hr/>
+    </div>
+
+    {% for each in collections.post | reverse %}
+      {% if (loop.index <= 10) %}
+        <div class="row my-3 my-md-1">
+          <div class="col-md-2">
+            {{ each.data.date | sgDate }}
+          </div>
+          <div class="col-md-10">
+            <a href="{{ each.data.external_url or each.url | url }}" class="link-info">
+              {{ each.data.title }}
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% if collections.post.length > 10 %}
+      <button class="btn btn-outline-dark btn-lg btn-block w-100 mt-5">
+        <a href="/devjournal" class="my-3">More entries...</a>
+      </button>
+    {% endif %}
+  </section>

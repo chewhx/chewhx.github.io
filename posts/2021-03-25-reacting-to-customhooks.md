@@ -3,7 +3,6 @@ layout: post
 date: 2021-03-25
 title: "Reacting to custom hooks"
 categories: react programming customhooks
-tags: ["post"]
 cover: /assets/images/posts/2021-03-25/screenshot.png
 ---
 

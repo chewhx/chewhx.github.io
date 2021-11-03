@@ -1,10 +1,13 @@
 ---
 layout: base.njk
 ---
-<article>
-<a href="/blog">
-<i class="bi bi-arrow-left" style="font-size: 2.5rem;"></i>
-</a>
-<h1>{{ title }} </h1>
-{{ content | safe}}
+<div class="container text-align-right">
+  <a href="/devjournal">
+    <i class="bi bi-arrow-left" style="font-size: 2.5rem;"></i>
+  </a>
+  <h1>{{ title }}</h1>
+  <p>{{ date | sgDate }}</p>
+</div>
+<article class="monospace">
+  {{ content | safe}}
 </article>

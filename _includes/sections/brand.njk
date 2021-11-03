@@ -1,21 +1,10 @@
-<div class="brand">
-  <img
-    src="../../assets/avatar.png"
-    alt="chewhx memoji"
-    class="brand__memoji"
-/>
-  <div class="brand__greeting">Chew Han Xiang</div>
-  <div class="brand__subheader">
-  Jr Frontend Developer @ Lyte Ventures
-  
-  </div>
-  {# <p class="text-center">
-    Since {{ "01102021" | fromNow }}
-  </p> #}
-  <div class="brand__summary" contenteditable="true">
-    <p>
-     while (alive): be curious. leave everything better than you found it 
-    </p>
-    <div class="blinking-cursor"></div>
-  </div>
-</div>
+<section id="brand">
+  <div class="container">
+    <div class="row">
+      <h3>Hi, I'm Han Xiang</h3>
+      <hr/>
+    </div>
+    {% markdown %}
+    {% include "sections/brand.md" %}
+    {% endmarkdown %}
+  </section>

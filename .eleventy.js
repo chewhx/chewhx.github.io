@@ -12,11 +12,19 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("sgDate", (date) => {
-    return moment(date, "DDMMYYYY").format("LL");
+    return moment(date, "DDMMYYYY").format("DD/MM/YYYY");
   });
 
-  eleventyConfig.addFilter("fromNow", (value) => {
-    return moment(value, "DDMMYYYY").fromNow();
+  let markdownIt = require("markdown-it");
+
+  const md = new markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  }).disable("code");
+
+  eleventyConfig.addPairedShortcode("markdown", (content, inline = null) => {
+    return inline ? md.renderInline(content) : md.render(content);
   });
 
   eleventyConfig.addPassthroughCopy("assets");

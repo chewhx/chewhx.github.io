@@ -1,0 +1,18 @@
+<section id="connect">
+  <div class="container">
+    <div class="row">
+      <h3>Connect with me</h3>
+      <hr/>
+    </div>
+    <ul class="list-unstyled m-0">
+      {% for each in connect %}
+        <li>
+      On {{ each.network }}: <a href="{{each.url}}">{{each.url}}</a>
+        </li>
+      {% endfor %}
+      <li>
+      On Email: hello@chewhx.com
+      </li>
+    </ul>
+  </div>
+</section>

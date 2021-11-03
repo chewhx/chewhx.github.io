@@ -3,7 +3,6 @@ layout: post
 title: "Book Review - The Body: A Guide for Occupants by Bill Bryson"
 date: 2020-08-28
 categories: book review biology non-fiction
-tags: ["post"]
 ---
 
 As a species, we don’t care for our bodies enough until it fails us. We exemplify our mental capabilities to explain progress and success while shunning away from the biology which makes it possible in the first place. Even with digital technology today we still interface with our bodies. Faces and colour don’t tell us as much the person underneath, but body shapes and size lie less often about our constitution. Our bodies, like languages, are mediums we used to communicate. They fill the gaps between the meeting of minds.

@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <h3>Dev Journal</h3>
+      <hr/>
+    </div>
+
+    {%- for each in collections.post | reverse -%}
+      <div class="row my-3 my-md-1">
+        <div class="col-md-2">
+          {{ each.data.date | sgDate }}
+        </div>
+        <div class="col-md-10">
+          <a href="{{ each.data.external_url or each.url | url }}" class="link-info">
+            {{ each.data.title }}
+          </a>
+        </div>
+      </div>
+    {%- endfor -%}
+  </section>

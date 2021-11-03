@@ -1,22 +1,14 @@
 [
   {
     "placeholder": "Works",
-    "icon": "bi bi-briefcase",
-    "url": "/works"
+    "url": "/#projects"
   },
   {
-    "placeholder": "Blog",
-    "icon": "bi bi-journal-text",
-    "url": "/blog"
+    "placeholder": "Journal",
+    "url": "/#devjournal"
   },
   {
-    "placeholder": "Resume",
-    "icon": "bi bi-file-earmark-person",
-    "url": "/resume"
-  },
-  {
-    "placeholder": "Contact",
-    "icon": "bi bi-bell",
-    "url": "/contact"
+    "placeholder": "Connect",
+    "url": "/#connect"
   }
 ]

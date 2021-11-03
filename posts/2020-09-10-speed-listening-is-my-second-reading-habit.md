@@ -3,7 +3,6 @@ layout: post
 title: "Speed listening is my second reading habit"
 date: 2020-09-10
 categories: speedlistening learning
-tags: ["post"]
 cover: /assets/images/posts/2020-09-10/speedlisteningfeatureimageairpodspro.png
 ---
 

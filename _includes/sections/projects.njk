@@ -1,19 +1,13 @@
-<section id="projects" class="projects">
-  <div class="project">
-    <div class="project__title">
-      <a href="/">
-    Pet Project 1
-    </a>
+<section id="projects">
+  <div class="container">
+    <div class="row">
+      <h3>Creator of</h3>
+      <hr/>
     </div>
-    <div class="project__description">
-      Read long feature articles like you would listen to audiobooks.
-    </div>
-  </div>
-  <div class="project">
-    <div class="project__title">Pet Project 2</div>
-    <div class="project__description">
-      I learnt programming, because I wanted to make a quiz game. I still am working on it.
+    <div class="row">
+      {% markdown %}
+      {% include "sections/projects.md" %}
+      {% endmarkdown %}
     </div>
   </div>
-
 </section>

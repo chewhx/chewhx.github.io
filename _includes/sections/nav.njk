@@ -1,34 +1,17 @@
-<nav>
+<nav class="navbar navbar-expand-lg navbar-light px-3">
   <div class="container">
-    <div class="navbar">
-      <ul class="nav w-100 justify-content-center">
-        <li class="nav__link">
-          <a href="https://www.linkedin.com/in/chewhx/" target="_blank">
-      RESUME
-      </a>
-        </li>
-        {# {% for item in nav %}
-          <li class="nav__link">
-            <a href={{item.url}}>
-              {{item.placeholder}}
-            </a>
-          </li>
-        {% endfor %} #}
-      </ul>
+    <a class="navbar-brand h3" href="/">
+      chewhx.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        {% for each in nav %}
+          <a class="nav-link" href="{{ each.url }}">{{ each.placeholder }}</a>
+        {% endfor %}
+      </div>
     </div>
   </div>
-  {# <div class="floater">
-    <div class="navbar">
-      <ul class="nav--mobile w-100 justify-content-center">
-        {% for item in nav %}
-          <li class="nav__link">
-            <a href="{{item.url}}">
-              <i class="{{item.icon}}"></i>
-              {{item.placeholder}}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div> #}
-</div>
 </nav>

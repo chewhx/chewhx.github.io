@@ -2,7 +2,6 @@
 layout: post
 title: "Resources for Non-Profit Organisations"
 date: 2020-08-01
-tags: ["post"]
 ---
 
 Working at a non-profit organisation presents its own unique set of challenges and constraints. We often don't have reliable income sources and access to ready capital, for acquiring additional resources on demand. Thankfully, we live in a connected world where digital resources, information, and knowledge are in abundance.
