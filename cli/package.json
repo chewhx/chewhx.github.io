@@ -1,0 +1,14 @@
+{
+  "name": "journal-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "journal": "./bin/journal.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.3.0"
+  }
+}
