@@ -151,38 +151,56 @@
   <a href="/devjournal">
     <i class="bi bi-arrow-left" style="font-size: 2.5rem;"></i>
   </a>
-  <h1>Right here, right now</h1>
-  <p>02/11/2021</p>
+  <h1>Black coffee, white coffee</h1>
+  <p>04/11/2021</p>
 </div>
 <article class="monospace">
-  <h1>14:56:21</h1>
-<p>I'll starting a public dev journal here.</p>
-<p>I have, intermittently, been &quot;writing&quot; or logging down notes on programming since 2020. A journaling habit records my journey and learning. It helps me remember the past and look back to see how much progress I've made. It also serve sort of an archive where I can go back to look for ideas and that learning point or tutorial on a certain topic.</p>
-<p>I'm keeping a public journal here, as I hope some of my ideas and logs can reach and inform people. I don't think I can write blog posts or articles, so I guess my readers will have to make do with my ramblings and notes.</p>
-<h1>15:53:58</h1>
-<p>One of the most annoying thing about taking notes, is the resistance to actual writing. I prefer type than handwritten, because I usually think faster than I can write. I'm looking to create a CLI tool using NodeJS. It will create a new file in the 'posts' folder in my current github pages repo, which is used to host this website and update the dev journal.</p>
-<p>The ideal workflow should work like this:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># To create a new file with layout</span><br>journal new<br><br><span class="token comment"># To commit the new journal entry</span><br><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><br><span class="token function">git</span> commit -m <span class="token string">"some commit message"</span><br><span class="token function">git</span> push</code></pre>
-<h1>16:28:18</h1>
-<p>I created a markdown snippet in VS Code to add the current timestamp.</p>
-<ol>
-<li>Cmd + Shift + P to open the command panel</li>
-<li>Select &quot;Preferences: Configure User Snippets&quot;</li>
-<li>Search for &quot;markdown&quot; and open &quot;markdown.json&quot;</li>
-<li>Insert the follow:</li>
-</ol>
-<pre class="language-json"><code class="language-json">  <span class="token property">"Insert Timestamp"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"prefix"</span><span class="token operator">:</span> <span class="token string">"timenow"</span><span class="token punctuation">,</span><br>    <span class="token property">"body"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND"</span><span class="token punctuation">,</span> <span class="token string">"$0"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Insert current timestamp in hr:min:sec"</span><br>  <span class="token punctuation">}</span></code></pre>
-<ol start="5">
-<li>Open the command panel again in step 1</li>
-<li>Select &quot;Preferences: Open Settings(JSON)&quot;</li>
-<li>Add the following settings:</li>
-</ol>
-<pre class="language-json"><code class="language-json"> <span class="token property">"[markdown]"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"editor.wordWrap"</span><span class="token operator">:</span> <span class="token string">"on"</span><span class="token punctuation">,</span><br>    <span class="token property">"editor.quickSuggestions"</span><span class="token operator">:</span> <span class="token boolean">true</span><br>  <span class="token punctuation">}</span></code></pre>
-<p>Now if you are writing markdown files in VS Code, you should be able to use the snippet with shortcut prefix 'datenow' to insert a timestamp (hr:min:sec)</p>
-<h1>18:35:36</h1>
-<p>When writing React applications, I'm biased towards using <a href="https://react-query.tanstack.com/">react-query</a> and <a href="https://formik.org/docs/overview">formik</a> from the <a href="https://tanstack.com/">TanStack</a> library.</p>
-<p>Not sure, if this is over-reliance on certain open source packages.</p>
-<p>The useQuery and useMutation hooks are really powerful for fetching and posting requests, with side-effects, and not having to managed React states and useEffects.</p>
+  <h1>10:43:23</h1>
+<ul>
+<li>
+<p>code deployed on the blockchain is immutable</p>
+</li>
+<li>
+<p>code is law</p>
+</li>
+<li>
+<p>if there is a flaw, you have to redeploy and have users use another contract address</p>
+</li>
+<li>
+<p>an external contract has a security hole where anyone can call the function</p>
+</li>
+<li>
+<p>we want to make an external contract <em>Ownable</em> - which means it can be only executable by the assigned owner</p>
+</li>
+<li>
+<p>the Ownable contract is very common in most dapps and they usually extend from the Ownable class</p>
+</li>
+<li>
+<p>check out OpenZeppelin</p>
+</li>
+<li>
+<p>contract constructor()</p>
+</li>
+<li>
+<p>Function Modifiers: modifier onlyOwner()</p>
+<ul>
+<li>half function used to modify other functions, usually to check some requirements prior to execution</li>
+</ul>
+</li>
+<li>
+<p>indexed keyword</p>
+</li>
+<li>
+<p>adding onlyOwner modifier to function</p>
+</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript">modifier <span class="token function">onlyOwner</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token function">require</span><span class="token punctuation">(</span><span class="token function">isOwner</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    _<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><br>  <span class="token keyword">function</span> <span class="token function">setKittyContractAddress</span><span class="token punctuation">(</span><span class="token parameter">address _address</span><span class="token punctuation">)</span> external onlyOwner<span class="token punctuation">{</span><br>    kittyContract <span class="token operator">=</span> <span class="token function">KittyInterface</span><span class="token punctuation">(</span>_address<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h1>19:59:24</h1>
+<p>I was supposed to log something, but I got distracted.</p>
+<h1>22:15:41</h1>
+<p>I managed to cook up a node cli which lets me create a new markdown file with front matter template, so I get write in this dev journal without much resistance.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># this creates new markdown file in ./posts </span><br><span class="token comment"># there are options for title, tags, and other front matter too</span><br>npx journal new<br><br><span class="token comment"># this deletes the latest markdown file created in ./posts </span><br>npx journal pop</code></pre>
 
 </article>
 

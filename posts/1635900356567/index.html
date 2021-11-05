@@ -117,6 +117,7 @@
 />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/prism-syntax.css"/>
 
     <title>Chew Han Xiang | chewhx.com</title>
   </head>
@@ -223,39 +224,7 @@
 <p>Progress of zombie smart contract up to Chapter 13:</p>
 </li>
 </ul>
-<pre><code class="language-javascript">pragma solidity &gt;=0.5.0 &lt;0.6.0;
-
-contract ZombieFactory {
-
-    // declare our event here
-    event NewZombie(uint zombieId, string name, uint dna);
-    uint dnaDigits = 16;
-    uint dnaModulus = 10 ** dnaDigits;
-
-    struct Zombie {
-        string name;
-        uint dna;
-    }
-
-    Zombie[] public zombies;
-
-    function _createZombie(string memory _name, uint _dna) private {
-        uint id = zombies.push(Zombie(_name, _dna)) - 1;
-        // and fire it here
-        emit NewZombie(id, _name, _dna);
-    }
-
-    function _generateRandomDna(string memory _str) private view returns (uint) {
-        uint rand = uint(keccak256(abi.encodePacked(_str)));
-        return rand % dnaModulus;
-    }
-
-    function createRandomZombie(string memory _name) public {
-        uint randDna = _generateRandomDna(_name);
-        _createZombie(_name, randDna);
-    }
-}
-</code></pre>
+<pre class="language-javascript"><code class="language-javascript">pragma solidity <span class="token operator">>=</span><span class="token number">0.5</span><span class="token number">.0</span> <span class="token operator">&lt;</span><span class="token number">0.6</span><span class="token number">.0</span><span class="token punctuation">;</span><br><br>contract ZombieFactory <span class="token punctuation">{</span><br><br>    <span class="token comment">// declare our event here</span><br>    event <span class="token function">NewZombie</span><span class="token punctuation">(</span>uint zombieId<span class="token punctuation">,</span> string name<span class="token punctuation">,</span> uint dna<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    uint dnaDigits <span class="token operator">=</span> <span class="token number">16</span><span class="token punctuation">;</span><br>    uint dnaModulus <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">**</span> dnaDigits<span class="token punctuation">;</span><br><br>    struct Zombie <span class="token punctuation">{</span><br>        string name<span class="token punctuation">;</span><br>        uint dna<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><br>    Zombie<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword">public</span> zombies<span class="token punctuation">;</span><br><br>    <span class="token keyword">function</span> <span class="token function">_createZombie</span><span class="token punctuation">(</span><span class="token parameter">string memory _name<span class="token punctuation">,</span> uint _dna</span><span class="token punctuation">)</span> <span class="token keyword">private</span> <span class="token punctuation">{</span><br>        uint id <span class="token operator">=</span> zombies<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">Zombie</span><span class="token punctuation">(</span>_name<span class="token punctuation">,</span> _dna<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span><br>        <span class="token comment">// and fire it here</span><br>        emit <span class="token function">NewZombie</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span> _name<span class="token punctuation">,</span> _dna<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><br>    <span class="token keyword">function</span> <span class="token function">_generateRandomDna</span><span class="token punctuation">(</span><span class="token parameter">string memory _str</span><span class="token punctuation">)</span> <span class="token keyword">private</span> view <span class="token function">returns</span> <span class="token punctuation">(</span><span class="token parameter">uint</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        uint rand <span class="token operator">=</span> <span class="token function">uint</span><span class="token punctuation">(</span><span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span>_str<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token keyword">return</span> rand <span class="token operator">%</span> dnaModulus<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><br>    <span class="token keyword">function</span> <span class="token function">createRandomZombie</span><span class="token punctuation">(</span><span class="token parameter">string memory _name</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span><br>        uint randDna <span class="token operator">=</span> <span class="token function">_generateRandomDna</span><span class="token punctuation">(</span>_name<span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token function">_createZombie</span><span class="token punctuation">(</span>_name<span class="token punctuation">,</span> randDna<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <ul>
 <li>
 <p>Source code for zombie lesson: <a href="https://github.com/loomnetwork/cryptozombies-lesson-code">https://github.com/loomnetwork/cryptozombies-lesson-code</a></p>
@@ -274,10 +243,7 @@ contract ZombieFactory {
 <ul>
 <li>Need to declare an interface which is a contract with functions you want to call, without curly braces:</li>
 </ul>
-<pre><code class="language-javascript">contract NumberInterface {
-function getNum(address _myAddress) public view returns (uint);
-}
-</code></pre>
+<pre class="language-javascript"><code class="language-javascript">contract NumberInterface <span class="token punctuation">{</span><br><span class="token keyword">function</span> <span class="token function">getNum</span><span class="token punctuation">(</span><span class="token parameter">address _myAddress</span><span class="token punctuation">)</span> <span class="token keyword">public</span> view <span class="token function">returns</span> <span class="token punctuation">(</span>uint<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 </li>
 </ul>
 <h1>21:04:22</h1>
@@ -289,15 +255,7 @@ function getNum(address _myAddress) public view returns (uint);
 <h1>22:05:05</h1>
 <p><a href="https://youtu.be/mnmYwRoSisg">Video: 10 Must Know Git Commands That Almost Nobody Knows</a></p>
 <p><a href="https://blog.webdevsimplified.com/2021-10/advanced-git-commands/">Article: 10 Must Know Git Commands That Almost Nobody Knows</a></p>
-<ul>
-<li>setting a git alias</li>
-<li><code>git commit .</code> and <code>git commit -A</code></li>
-<li>learn more on git stash</li>
-<li><code>git log</code></li>
-<li><code>git log --graph --decorate --oneline</code></li>
-<li><code>git branch -vv</code></li>
-<li><code>git log -S &quot;serachterm&quot;</code></li>
-</ul>
+<pre class="language-text"><code class="language-text">- *setting a git alias<br>- git commit . and git commit -A<br>- *learn more on git stash<br>- git log<br>- git log --graph --decorate --oneline<br>- git branch -vv<br>- git log -S "serachterm"</code></pre>
 <p><a href="https://youtu.be/-aPoRU5W8lA">Git stash tutorial. How to save changes for later in git.</a></p>
 <pre><code>SYNOPSIS
        git stash list [&lt;options&gt;]
@@ -327,15 +285,6 @@ function getNum(address _myAddress) public view returns (uint);
     </small>
   </div>
 </footer>
-
-    <script>
-      var tooltipTriggerList = []
-        .slice
-        .call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-      })
-    </script>
   </body>
 
 </html>

@@ -117,6 +117,7 @@
 />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/prism-syntax.css"/>
 
     <title>Chew Han Xiang | chewhx.com</title>
   </head>
@@ -161,9 +162,7 @@
 <p>The demo make request to the <a href="https://jsonplaceholder.typicode.com/">jsonplacholder fake Rest API</a>.</p>
 <p>I've wrapped the axios requests and responses in a usePosts() hook, which provide methods to various actions and their responses.</p>
 <p>You can call the hook by passing a base url or api endpoint. The actions perform the basic CRUD operations.</p>
-<pre><code class="language-javascript">const { results, message, getAllPosts, addPost, updatePost, deletePost } =
-  usePosts(&quot;https://jsonplaceholder.typicode.com&quot;);
-</code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> results<span class="token punctuation">,</span> message<span class="token punctuation">,</span> getAllPosts<span class="token punctuation">,</span> addPost<span class="token punctuation">,</span> updatePost<span class="token punctuation">,</span> deletePost <span class="token punctuation">}</span> <span class="token operator">=</span><br>  <span class="token function">usePosts</span><span class="token punctuation">(</span><span class="token string">"https://jsonplaceholder.typicode.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>See the demo <a href="https://project-hooks.herokuapp.com">here</a></p>
 <p>For each action, the response and a custom message is set, which can be output into the frontend.</p>
 <p>I can see how adopting this way of writing code, will make components cleaner and easy to work with. Keeping components stateless and clean, also makes them much more reusable and easier to maintain.</p>
@@ -188,15 +187,6 @@
     </small>
   </div>
 </footer>
-
-    <script>
-      var tooltipTriggerList = []
-        .slice
-        .call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-      })
-    </script>
   </body>
 
 </html>
