@@ -1,5 +1,6 @@
 const fs = require("fs");
 const { __postdir } = require("./paths");
+const open = require("open");
 
 const newEntry = (args) => {
   const entryName = Date.now() + ".md";
@@ -25,6 +26,7 @@ ${Object.entries(frontMatter)
 ---\n\n`;
 
   fs.writeFileSync(filePath, journalTemplate, { encoding: "utf-8" });
+  Promise.resolve(open(filePath, { app: { name: "Visual Studio Code" } }));
   console.log(`New journal entry created ${entryName}`);
 };
 
