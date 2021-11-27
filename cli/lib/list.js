@@ -4,6 +4,7 @@ const fs = require("fs-extra");
 const getEntries = require("../utils/getEntries");
 const getPostTitle = require("../utils/getPostTitle");
 const open = require("open");
+const { format } = require("date-fns");
 
 module.exports = () => {
   // Get a list of posts in post dir
@@ -21,8 +22,9 @@ module.exports = () => {
 
   listOfPosts = listOfPosts.map(({ entry, birthtime }) => {
     const postPath = __postdir + "/" + entry;
+    const stringDate = format(birthtime, "do MMM yyyy HH:mm");
     return {
-      name: `${getPostTitle(postPath)} - ${birthtime.toLocaleString()}`,
+      name: `${stringDate} - ${getPostTitle(postPath)}`,
       value: postPath,
     };
   });
