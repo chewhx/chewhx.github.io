@@ -1,24 +1,25 @@
-<section id="connect">
+<section id="connect" data-color="orange">
   <div class="container">
     <div class="row">
-      <h3>Connect with me</h3>
-      <hr/>
+      <h1 class="title">connect.</h1>
     </div>
-    <div class="row my-3 my-md-1">
-      {% for each in connect %}
-        <div class="col-md-2">
-          {{ each.network }}: 
+    <ul>
+      <div class="row my-3 my-md-1">
+        {% for each in connect %}
+          <div class="col-md-2">
+            {{ each.network }}: 
       </div>
-        <div class="col-md-10">
-          <a href="{{each.url}}" target="_blank" rel="noreferrer">{{each.url}}</a>
-        </div>
-      {% endfor %}
-      <div class="col-md-2">
+          <div class="col-md-10">
+            <a href="{{each.url}}" target="_blank" rel="noreferrer">{{each.url}}</a>
+          </div>
+        {% endfor %}
+        <div class="col-md-2">
          Email: 
       </div>
-      <div class="col-md-10">
+        <div class="col-md-10">
           hello@chewhx.com
         </div>
+      </ul>
     </div>
   </div>
 </section>

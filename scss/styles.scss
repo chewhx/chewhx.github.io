@@ -1,27 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap");
 @import "./bootstrap";
-@import "./variables";
-@import "./utilities";
-@import "./mixins";
-@import "./base";
-@import "./typography";
 
-.navbar-toggler {
-  border: 0;
-  font-size: 2.5rem;
+// COLORS
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #9d9d9d;
+$color-primary: #111d5e;
+$color-secondary: #c70039;
+$color-accent: #c0e218;
+$color-accent2: #f37121;
+
+// BREAKPOINTS
+$bk-tablet-land: 1024px;
+$bk-tablet-port: 768px;
+$bk-phone: 576px;
+
+// TYPE
+$monospace: "Space Mono";
+$sans-serif: "IBM Plex Sans";
+$serif: "IBM Plex Serif";
+
+@import "./type";
+
+// RESET
+*,
+:after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid $color-black;
 }
 
-.monospace {
-  font-family: "Space Mono", "Courier New", Courier, monospace;
+// MEDIA QUERIES
+html {
+  @media only screen and (max-width: $bk-tablet-port) {
+    font-size: 13px;
+  }
+  @media only screen and (max-width: $bk-phone) {
+    font-size: 11px;
+  }
 }
 
-.post {
-  font-size: "1rem";
+body {
+  font-family: $serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  transition: background-color 1s ease;
 }
 
-.rounded-pill {
-  float: right;
-  margin-left: 0.2rem;
+main {
+  padding: 0 10rem;
+  min-height: 60vh;
+  @media only screen and (max-width: $bk-tablet-land) {
+    padding: 0 1rem;
+  }
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  margin: auto 0;
+  height: 100vh;
+}
+
+article {
+  max-width: 768px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.color-red {
+  background-color: #c70039;
+  color: #ffffff;
+  a {
+    color: #ffffff;
+  }
+}
+
+.color-orange {
+  background-color: #f37121;
+  color: #000;
+  a {
+    color: #000;
+  }
+}
+
+.color-blue {
+  background-color: #111d5e;
+  color: #ffffff;
+  a {
+    color: #ffffff;
+  }
 }
