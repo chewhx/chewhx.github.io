@@ -79,6 +79,14 @@ article {
   font-size: 1.2rem;
 }
 
+.color-white {
+  background-color: #fff;
+  color: #231e23;
+  a {
+    color: #231e23;
+  }
+}
+
 .color-red {
   background-color: #c70039;
   color: #ffffff;
@@ -87,11 +95,19 @@ article {
   }
 }
 
-.color-orange {
-  background-color: #f37121;
+.color-green {
+  background-color: #39a6a3;
   color: #000;
   a {
     color: #000;
+  }
+}
+
+.color-black {
+  background-color: #000;
+  color: #fff8f3;
+  a {
+    color: #fff8f3;
   }
 }
 
@@ -101,4 +117,28 @@ article {
   a {
     color: #ffffff;
   }
+}
+
+.sun {
+  &-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+  }
+  position: fixed;
+  height: 0;
+  width: 60vh;
+  padding-bottom: 60vh;
+  top: 10%;
+  margin: 0 auto;
+  opacity: 0.4;
+
+  background: #292c6d;
+  border-radius: 50%;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 60px 10px #292c6d;
+  filter: blur(70px);
 }

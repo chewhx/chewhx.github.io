@@ -1,5 +1,9 @@
-Junior Frontend Developer @ [Lyte Ventures](https://www.lyteventures.com/), developing in React. I write fullstack apps in the NodeJS and React. I'm interested to build solutions for productivity, fintech and lifestyle.
+I’m a junior frontend developer on an agile team, working on fintech solutions for the freelancers and self-employed.
 
-Several hundred git commits ago, I was managing programmes at a [non-profit arts organisation](https://www.siongleng.com/), after having graduated with an degree in [accountancy](https://accountancy.smu.edu.sg/). I also volunteered at the Institute of Mental Health and for [ZeroWasteSG](http://www.zerowastesg.com/).
+Several hundred git commits ago, I was managing art programmes at a [non-profit](https://www.siongleng.com/) and studying for a degree in [accountancy](https://accountancy.smu.edu.sg/).
 
-I started with learning [web development](https://www.udemy.com/course/the-complete-web-development-bootcamp/) in Aug 2020.
+My personality type is [INTJ](https://www.16personalities.com/intj-personality) and [5w6](https://www.truity.com/enneagram/personality-type-5-investigator).
+
+I workout in the gym, watch too many tutorial videos and Netflix. I write hobby projects and host them on AWS or Google Cloud.
+
+I’m also a [hodler](https://www.investopedia.com/terms/h/hodl.asp) and learning about web3 and blockchain.
