@@ -1,0 +1,18 @@
+{% from "macros/pcard.njk" import pCard%}
+
+<section id="work" class="flex flex-row items-center w-full">
+  <div class="text-2xl px-10 lg:px-24 md:text-4xl lg:text-5xl tracking-tight font-extrabold overflow-hidden">
+    <h1 class="text-7xl font-thin my-10">#playground</h1>
+    <h1>Products cards inspired by Masterclass.com</h1>
+
+    {% for item in pcard %}
+      <a href="#pcard-{{ item.id }}" class="text-2xl">{{ item.id }}</a>
+    {% endfor %}
+
+    <div class="container bg-slate-200 rounded-3xl flex w-64" style="overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;">
+      {% for item in pcard %}
+        {{ pCard(item.image, item.image_alt, item.title, item.subtitle, item.id) }}
+      {% endfor %}
+    </div>

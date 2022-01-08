@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#about a {
+  @apply text-transparent font-black bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:text-black hover:underline visited:text-yellow-400;
+}
+
+.pcard__button--white {
+  @apply rounded-2xl 
+  bg-white 
+  text-base  
+  py-4 
+  px-10 
+  font-semibold 
+  w-11/12 
+  uppercase 
+  tracking-wide 
+  my-2 
+  mx-auto;
+}
+
+.pcard__button--black {
+  @apply rounded-2xl 
+  bg-black text-base 
+  text-white 
+  py-4 
+  px-10 
+  font-semibold 
+  w-11/12 
+  uppercase 
+  tracking-wide 
+  my-2 
+  mx-auto;
+}

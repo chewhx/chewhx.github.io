@@ -1,0 +1,6 @@
+<section id="about">
+  <div class="text-2xl px-10 lg:px-24 md:text-4xl lg:text-5xl tracking-tight font-semibold">
+    {% set snippet %}{% include 'views/about.md' %}{% endset %}
+    {{ snippet | markdown | safe }}
+  </div>
+</section>

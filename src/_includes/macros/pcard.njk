@@ -1,0 +1,42 @@
+{% macro pCard(img, imgAlt, title, subtitle, id) %}
+
+  <div id="pcard-{{id}}" class="pcard group inline-block relative bg-zinc-500 rounded-2xl whitespace-normal overflow-hidden cursor-pointer flex-shrink-0 mx-3 first:ml-0" style="height: 30rem; width: 16rem; scroll-snap-align: start;">
+    <img
+  class="absolute inset-0 w-full h-full object-cover duration-500 group-hover:scale-[1.1] ease-[cubic-bezier(0.29, 1.185, 1, 1)]"
+    src={{ img }}
+    alt={{ imgAlt }}
+/>
+    <div class="pcard__footer flex flex-col h-full w-full absolute top-0 left-0 z-30 translate-y-[64%] group-hover:translate-y-[35%]" style="background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transition: transform 0.5s cubic-bezier(0.29, 1.185, 1, 1);
+    ">
+      <h1 class="pcard__title text-center font-serif text-white text-4xl">
+        {{ title }}
+      </h1>
+      <div class="pcard__divider h-2 w-6 bg-white mx-auto my-4"></div>
+      <div class="pcard__subtitle px-10 my-[0.5rem] mx-auto text-base leading-4 tracking-wide text-center text-white font-bold">
+        {{ subtitle }}
+      </div>
+      <button class="pcard__button--white">
+    DOCUMENTATION
+    </button>
+      <button class="pcard__button--black">
+    REPOSITORY
+    </button>
+    </div>
+  </div>
+{% endmacro %}
+{#   width: 90%;
+  padding: 20px 10px;
+  border: 0px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin: 5px auto;
+  cursor: pointer; #}

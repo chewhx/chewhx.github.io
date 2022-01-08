@@ -1,0 +1,26 @@
+{
+  "name": "chewhx.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-11ty": "npx eleventy",
+    "build-scss": "sass --no-source-map src/assets/scss/styles.scss src/assets/css/styles.css",
+    "watch-scss": "sass --no-source-map --watch src/assets/scss/styles.scss src/assets/css/styles.css",
+    "watch-tail": "npx tailwindcss -i ./src/assets/css/_tailwind.css -o ./src/assets/css/styles.css --watch",
+    "serve": "npx eleventy --serve",
+    "start": "concurrently \"npm run watch-tail\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "concurrently": "^7.0.0",
+    "markdown-it": "^12.3.0",
+    "markdown-it-emoji": "^2.0.0",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.2",
+    "tailwindcss": "^3.0.11"
+  }
+}
